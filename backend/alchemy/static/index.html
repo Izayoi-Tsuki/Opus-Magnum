@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>炼金组合浏览器</title>
+<style>
+  :root { --bg:#f4f1ea; --panel:#fffdf8; --line:#e3dccd; --ink:#2b2a27; --muted:#8a8478; --accent:#b7791f; --ok:#2f855a; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.5 "Microsoft YaHei","PingFang SC",sans-serif; background:var(--bg); color:var(--ink); }
+  header { display:flex; align-items:center; gap:16px; padding:10px 20px; background:var(--panel); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
+  header h1 { font-size:17px; margin:0 8px 0 0; }
+  .tabs button { border:0; background:none; padding:6px 14px; border-radius:6px; font:inherit; cursor:pointer; color:var(--muted); }
+  .tabs button.on { background:#efe7d6; color:var(--ink); font-weight:bold; }
+  header .info { margin-left:auto; color:var(--muted); font-size:12px; text-align:right; }
+  button.btn { font:inherit; font-size:13px; padding:4px 10px; border:1px solid var(--line); background:#fff; border-radius:6px; cursor:pointer; }
+  button.btn:hover { border-color:var(--accent); }
+  button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  select, input { font:inherit; padding:3px 6px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  main { padding:16px 20px 60px; }
+  section[hidden] { display:none !important; }
+  .problems { background:#fdecea; border:1px solid #f5c2bd; color:#9b2c2c; padding:8px 14px; border-radius:8px; margin-bottom:12px; }
+  .muted { color:var(--muted); }
+  .small { font-size:12px; }
+  h2 { margin:0 0 4px; font-size:20px; }
+  h3 { margin:22px 0 8px; font-size:15px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:8px; text-align:center; cursor:pointer; }
+  .card:hover { border-color:#cdbf9f; }
+  .card.sel { border-color:var(--accent); box-shadow:0 0 0 2px #f3dfb5; }
+  .card-name { font-weight:bold; }
+  .lib { display:grid; grid-template-columns:minmax(300px,1fr) minmax(420px,1.3fr); gap:18px; align-items:start; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .detail { position:sticky; top:70px; max-height:calc(100vh - 90px); overflow:auto; }
+  .detail-head { display:flex; gap:16px; align-items:center; }
+  .detail-head p { margin:2px 0; }
+  .btns { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+  .recipe { border:1px solid var(--line); border-radius:10px; padding:8px 10px; margin:6px 0; background:#fff; }
+  .figs { display:flex; align-items:center; gap:4px; flex-wrap:wrap; }
+  .fig { text-align:center; font-size:12px; max-width:110px; }
+  .fig div { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .op { font-size:18px; color:var(--muted); padding:0 4px 16px; }
+  .op.word { font-size:13px; }
+  .recipe-text { font-size:13px; margin-top:4px; }
+  .kind { display:inline-block; font-size:12px; padding:0 6px; border-radius:4px; margin-right:6px; color:#fff; }
+  .kind-side { background:#4a7fb5; } .kind-stack { background:#b5654a; } .kind-rod { background:#6b6b6b; }
+  .tag { display:inline-block; font-size:12px; padding:1px 8px; border-radius:10px; }
+  .tag.hit { background:#e3f4ea; color:var(--ok); font-weight:bold; }
+  .tag.miss { background:#eee; color:#777; }
+  .try-top { display:flex; gap:16px; align-items:stretch; flex-wrap:wrap; }
+  .slot { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px; width:300px; }
+  .slot-title { font-weight:bold; font-size:16px; margin-bottom:6px; }
+  .slot select { width:100%; }
+  .slot-body { margin-top:8px; min-height:150px; text-align:center; }
+  .composer svg { cursor:pointer; }
+  .palette { display:flex; gap:6px; justify-content:center; margin:6px 0; }
+  .palette span { width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; border:2px solid transparent; font-size:12px; }
+  .palette span.on { border-color:var(--ink); }
+  .try-go { display:flex; flex-direction:column; justify-content:center; gap:8px; }
+  .results { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:10px; margin-top:12px; }
+  .result { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:8px 10px; }
+  .result.hit { border-color:#9fd3b4; }
+  .result-head { display:flex; align-items:center; gap:6px; margin-bottom:2px; }
+  .result-head .btn { margin-left:auto; }
+  .toolbar { display:flex; gap:12px; align-items:center; flex-wrap:wrap; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 14px; }
+  .cands { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:10px; margin-top:12px; }
+  .cand { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px; }
+  .cand-head { display:flex; gap:10px; align-items:center; }
+  .cand-head b { font-size:16px; }
+  .more { display:none; } .cand.open .more { display:block; }
+  .center { justify-content:center; }
+  .man { display:flex; gap:10px; align-items:stretch; flex-wrap:wrap; }
+  .man .slot { width:310px; }
+  .man-op { align-self:center; font-size:28px; color:var(--muted); }
+  .spin { transform-box:view-box; transform-origin:1px 1.1547px; }
+  .steps { text-align:left; margin:8px 0; padding-left:22px; font-size:13px; }
+  .tag.big { font-size:14px; padding:2px 12px; }
+  #toast { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:#2b2a27; color:#fff; padding:8px 16px; border-radius:8px; display:none; z-index:10; }
+</style>
+</head>
+<body>
+<header>
+  <h1>炼金组合浏览器</h1>
+  <nav class="tabs">
+    <button data-tab="lib" class="on">组合库</button>
+    <button data-tab="try">试验</button>
+    <button data-tab="manual">手动摆放</button>
+    <button data-tab="explore">探索新形状</button>
+  </nav>
+  <button class="btn" id="reload">重新读取组合库</button>
+  <div class="info" id="info"></div>
+</header>
+<main>
+  <div id="problems"></div>
+
+  <section id="tab-lib">
+    <div class="lib">
+      <div class="grid" id="lib-grid"></div>
+      <div class="panel detail" id="lib-detail"></div>
+    </div>
+  </section>
+
+  <section id="tab-try" hidden>
+    <div class="try-top">
+      <div class="slot" id="slot-a"></div>
+      <div class="slot" id="slot-b"></div>
+      <div class="try-go">
+        <button class="btn primary" id="try-run">试验 ▶</button>
+        <button class="btn" id="try-swap">交换 A / B</button>
+        <label class="small"><input type="checkbox" id="try-hits"> 只看库中存在的</label>
+      </div>
+    </div>
+    <div id="try-out"></div>
+  </section>
+
+  <section id="tab-manual" hidden>
+    <div class="man">
+      <div class="slot" id="mslot-a"></div>
+      <div class="man-op">＋</div>
+      <div class="slot" id="mslot-b"></div>
+      <div class="man-op">＝</div>
+      <div class="slot" id="man-result"></div>
+    </div>
+    <p class="muted small">A、B 按图中的位置原样放进同一个大三角：旋转是绕大三角的几何中心转 120°，翻转是左右镜像，移动是在大三角里换一个放得下的位置。重叠的位置按覆盖顺序取强者，结果上用橙圈标出。</p>
+  </section>
+
+  <section id="tab-explore" hidden>
+    <div class="toolbar">
+      <label>层数 <select id="ex-depth"><option>1</option><option selected>2</option><option value="3">3（很慢，可能几分钟）</option></select></label>
+      <label>最多球数 <select id="ex-max"></select></label>
+      <label>最少球数 <select id="ex-min"></select></label>
+      <button class="btn primary" id="ex-run">探索 ▶</button>
+      <span class="muted small">列出从组合库出发能做出来、但库里还没有的形状；第 2 层起会把上一层的候选（C001…）当原料。</span>
+    </div>
+    <div id="ex-status" class="muted" style="margin-top:10px"></div>
+    <div class="cands" id="ex-out"></div>
+    <div style="text-align:center;margin-top:12px"><button class="btn" id="ex-more" hidden>加载更多</button></div>
+  </section>
+</main>
+<div id="toast"></div>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let S = null;
+let libSel = null;
+
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.style.display = 'block';
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.style.display = 'none', 2600);
+}
+
+async function api(path) {
+  const r = await fetch(path);
+  const d = await r.json().catch(() => ({ detail: r.statusText }));
+  if (!r.ok) throw new Error(typeof d.detail === 'string' ? d.detail : JSON.stringify(d.detail));
+  return d;
+}
+
+const nameOf = id => S.substances[id]?.name ?? id;
+const edgeList = () => S.rules.edges.map(e => e.split('-').map(Number));
+
+// ---- 大三角绘制（单位坐标：相邻位置距离 1） --------------------------------
+const H = Math.sqrt(3) / 2;
+function xy(p) { const [q, r] = S.rules.positions[p]; return [q + r / 2, (2 - r) * H]; }
+
+function inkFor(hex) {
+  const n = parseInt(hex.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+  return (0.299 * r + 0.587 * g + 0.114 * b) > 160 ? '#333' : '#fff';
+}
+
+function tri(layout, o = {}) {
+  const size = o.size || 80;
+  const balls = layout.balls || {};
+  const rods = (layout.rods || []).map(e => e.split('-').map(Number));
+  const mark = new Set(o.mark || []);
+  const hot = new Set((o.edges || (o.edge ? [o.edge] : [])).map(e => Array.isArray(e) ? e.join('-') : e));
+  const C = [1, 4 * H / 3];
+  const corner = p => { const [x, y] = xy(p); return [C[0] + (x - C[0]) * 1.5, C[1] + (y - C[1]) * 1.5]; };
+  let g = `<polygon points="${[0, 3, 5].map(p => corner(p).join(',')).join(' ')}" fill="#faf6ec" stroke="#d3c9b4" stroke-width="0.04" stroke-linejoin="round"/>`;
+  for (const [a, b] of edgeList()) {
+    const [x1, y1] = xy(a), [x2, y2] = xy(b);
+    g += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#e6dfcf" stroke-width="0.03"/>`;
+    // 点击区只取短边中段，避开两端的球
+    if (o.interactive) g += `<line data-edge="${a}-${b}" x1="${x1 + (x2 - x1) * 0.3}" y1="${y1 + (y2 - y1) * 0.3}" x2="${x1 + (x2 - x1) * 0.7}" y2="${y1 + (y2 - y1) * 0.7}" stroke="transparent" stroke-width="0.32"/>`;
+  }
+  for (let p = 0; p < 6; p++) {
+    if (balls[p]) continue;
+    const [x, y] = xy(p);
+    const hit = o.interactive ? ` data-pos="${p}"` : '';
+    g += `<circle${hit} cx="${x}" cy="${y}" r="0.3" fill="${o.interactive ? '#fff' : 'none'}" stroke="#d8cfbd" stroke-width="0.035" stroke-dasharray="0.08 0.06"/>`;
+    if (o.showIndex) g += `<text x="${x}" y="${y}" font-size="0.26" fill="#c5bba6" text-anchor="middle" dominant-baseline="central" pointer-events="none">${p}</text>`;
+  }
+  if (o.spin) g += '<g class="spin">';
+  for (const [a, b] of rods) {
+    const [x1, y1] = xy(a), [x2, y2] = xy(b);
+    const color = hot.has(`${a}-${b}`) ? '#e08a00' : '#4a4540';
+    g += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="0.15" stroke-linecap="round" pointer-events="none"/>`;
+  }
+  for (let p = 0; p < 6; p++) {
+    const [x, y] = xy(p), e = balls[p];
+    if (mark.has(p)) g += `<circle cx="${x}" cy="${y}" r="0.45" fill="none" stroke="#e08a00" stroke-width="0.06"/>`;
+    if (!e) continue;
+    const hit = o.interactive ? ` data-pos="${p}"` : '';
+    const col = S.colors[e] || '#999';
+    g += `<circle${hit} cx="${x}" cy="${y}" r="0.34" fill="${col}" stroke="rgba(0,0,0,.35)" stroke-width="0.035"/>`;
+    if (size >= 56) g += `<text x="${x}" y="${y + 0.01}" font-size="0.32" fill="${inkFor(col)}" text-anchor="middle" dominant-baseline="central" pointer-events="none">${esc(e)}</text>`;
+  }
+  if (o.spin) g += '</g>';
+  return `<svg width="${size}" height="${(size * 2.7 / 3.1).toFixed(1)}" viewBox="-0.55 -0.63 3.1 2.7">${g}</svg>`;
+}
+
+const KIND_CLASS = { '并排': 'side', '叠放': 'stack', '加杆': 'rod' };
+const fig = (layout, name, size, o = {}) => `<div class="fig">${tri(layout, { size, ...o })}<div title="${esc(name)}">${esc(name)}</div></div>`;
+
+function recipeView(r, o = {}) {
+  const size = o.size || 64;
+  const names = r.input_names || r.inputs.map(nameOf);
+  const outName = o.outName ?? r.output_name ?? nameOf(r.output);
+  const [la, lb] = r.input_layouts;
+  let figs;
+  if (r.kind === '加杆') {
+    figs = fig(la, names[0], size) + `<span class="op word">加杆 →</span>` + fig(r.result, outName, size, { edge: r.edge });
+  } else {
+    const overlap = Object.keys(la.balls).filter(k => k in lb.balls).map(Number);
+    figs = fig(la, names[0], size) + `<span class="op">＋</span>` + fig(lb, names[1], size)
+         + `<span class="op">＝</span>` + fig(r.result, outName, size, { mark: overlap });
+  }
+  const text = o.text === false ? '' :
+    `<div class="recipe-text"><span class="kind kind-${KIND_CLASS[r.kind]}">${esc(r.kind)}</span>${esc(r.text)}`
+    + (r.variants > 1 ? ` <span class="muted">（共 ${r.variants} 种摆法）</span>` : '') + `</div>`;
+  return `<div class="${o.bare ? '' : 'recipe'}"><div class="figs">${figs}</div>${text}</div>`;
+}
+
+function snippet(layout) {
+  const balls = Object.entries(layout.balls).map(([p, e]) => `"${p}": "${e}"`).join(', ');
+  const rods = (layout.rods || []).map(r => `"${r}"`).join(', ');
+  return `{ "id": "", "name": "", "balls": { ${balls} }, "rods": [${rods}] }`;
+}
+
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); toast('已复制，可粘贴到 library.json 的 substances 里'); }
+  catch { prompt('复制下面这行：', text); }
+}
+
+const costText = s => s.base ? '基础物质' : s.cost == null ? '合成不出来' : `最少 ${s.cost} 步`;
+
+// ---- 组合库 ------------------------------------------------------------------
+function renderLibrary() {
+  const ids = Object.keys(S.substances);
+  if (!S.substances[libSel]) libSel = ids.find(id => !S.substances[id].base) ?? ids[0];
+  $('#lib-grid').innerHTML = ids.map(id => {
+    const s = S.substances[id];
+    return `<div class="card ${id === libSel ? 'sel' : ''}" data-id="${esc(id)}">${tri(s.layout, { size: 110 })}
+      <div class="card-name">${esc(s.name)}</div>
+      <div class="muted small">${esc(id)} · ${s.ball_count}球${s.rod_count}杆 · ${costText(s)}</div></div>`;
+  }).join('');
+  renderDetail();
+}
+
+function renderDetail() {
+  const el = $('#lib-detail'), s = S.substances[libSel];
+  if (!s) { el.innerHTML = '<p class="muted">组合库是空的</p>'; return; }
+  const list = (ids, empty, numbered) => ids.length
+    ? ids.map((id, n) => (numbered ? `<div class="small muted">第 ${n + 1} 步</div>` : '') + recipeView(S.recipeById[id])).join('')
+    : `<p class="muted">${empty}</p>`;
+  el.innerHTML = `
+    <div class="detail-head">${tri(s.layout, { size: 170, showIndex: true })}
+      <div><h2>${esc(s.name)} <span class="muted small">${esc(libSel)}</span></h2>
+        <p>${s.ball_count} 球 ${s.rod_count} 杆 · 大三角里共 ${s.placements} 种摆法</p>
+        <p>${costText(s)}</p>
+        ${s.note ? `<p class="muted">${esc(s.note)}</p>` : ''}
+        <div class="btns">
+          <button class="btn" data-to="a">放到试验 A</button><button class="btn" data-to="b">放到试验 B</button>
+          <button class="btn" data-to="ma">放到摆放 A</button><button class="btn" data-to="mb">放到摆放 B</button>
+        </div></div></div>
+    ${s.base || s.cost == null ? '' : `<h3>最短合成路径（${s.shortest.length} 步）</h3>${list(s.shortest, '', true)}`}
+    <h3>做法（${s.made_by.length}）</h3>${list(s.made_by, '组合库里没有能做出它的配方')}
+    <h3>用途（${s.used_in.length}）</h3>${list(s.used_in, '还不能用来做出库里的其他物质')}`;
+}
+
+$('#lib-grid').addEventListener('click', e => {
+  const c = e.target.closest('.card'); if (!c) return;
+  libSel = c.dataset.id; renderLibrary();
+});
+$('#lib-detail').addEventListener('click', e => {
+  const b = e.target.closest('[data-to]'); if (!b) return;
+  const to = b.dataset.to;
+  if (to.startsWith('m')) { setMSlot(to[1], libSel); manChanged(to[1]); showTab('manual'); return; }
+  slots[to].mode = libSel; renderSlot(to); showTab('try');
+});
+
+// ---- 自定义形状编辑（试验、手动摆放共用） -------------------------------------
+function paletteHTML(brush) {
+  return `<div class="palette">${S.rules.elements.map(e => `<span data-brush="${esc(e)}" class="${e === brush ? 'on' : ''}" style="background:${S.colors[e]};color:${inkFor(S.colors[e])}">${esc(e)}</span>`).join('')}
+    <span data-brush="" class="${brush === '' ? 'on' : ''}" style="background:#fff;${brush === '' ? '' : 'border-color:#ddd'}" title="擦除">×</span></div>`;
+}
+
+// 在 obj（{balls, rods}）上处理一次点击；笔刷存在 sl.brush。返回是否需要重绘
+function editAt(target, sl, obj) {
+  const brush = target.closest('[data-brush]');
+  if (brush) { sl.brush = brush.dataset.brush; return true; }
+  const pos = target.closest('[data-pos]');
+  if (pos) {
+    const p = pos.dataset.pos;
+    if (!sl.brush || obj.balls[p] === sl.brush) {
+      delete obj.balls[p];
+      obj.rods = obj.rods.filter(r => !r.split('-').includes(p));
+    } else obj.balls[p] = sl.brush;
+    return true;
+  }
+  const edge = target.closest('[data-edge]');
+  if (edge) {
+    const id = edge.dataset.edge, [a, b] = id.split('-');
+    if (obj.rods.includes(id)) obj.rods = obj.rods.filter(r => r !== id);
+    else if (obj.balls[a] && obj.balls[b]) obj.rods = [...obj.rods, id].sort();
+    else { toast('连接杆两端都要有球'); return false; }
+    return true;
+  }
+  return false;
+}
+
+// ---- 试验 --------------------------------------------------------------------
+const slots = { a: { mode: null, balls: {}, rods: [], brush: null }, b: { mode: null, balls: {}, rods: [], brush: null } };
+
+function specOf(sl) {
+  const balls = Object.keys(sl.balls).sort().map(p => `${p}=${sl.balls[p]}`).join(' ');
+  return balls + (sl.rods.length ? ` | 杆: ${sl.rods.join(' ')}` : '');
+}
+
+function refOf(k) {
+  const sl = slots[k];
+  if (sl.mode === '__none') return '';
+  if (sl.mode === '__custom') return specOf(sl);
+  return sl.mode;
+}
+
+function setCustom(k, layout) {
+  const sl = slots[k];
+  sl.mode = '__custom'; sl.balls = { ...layout.balls }; sl.rods = [...(layout.rods || [])];
+}
+
+function renderSlot(k) {
+  const sl = slots[k], el = $('#slot-' + k);
+  const ids = Object.keys(S.substances);
+  if (sl.mode == null || (!S.substances[sl.mode] && !sl.mode.startsWith('__'))) sl.mode = k === 'a' ? (ids.find(i => i === 'fire') ?? ids[0]) : (ids.find(i => i === 'water') ?? ids[0]);
+  if (!sl.brush) sl.brush = S.rules.elements[0];
+  const opt = (v, label) => `<option value="${esc(v)}" ${sl.mode === v ? 'selected' : ''}>${esc(label)}</option>`;
+  el.innerHTML = `<div class="slot-title">${k.toUpperCase()}</div>
+    <select>${k === 'b' ? opt('__none', '无（只给 A 加杆）') : ''}${ids.map(id => opt(id, `${S.substances[id].name}（${id}）`)).join('')}${opt('__custom', '自定义形状…')}</select>
+    <div class="slot-body"></div>`;
+  const body = $('.slot-body', el);
+  if (sl.mode === '__none') {
+    body.innerHTML = '<p class="muted" style="padding-top:50px">只放 A，列出所有加杆方式</p>';
+  } else if (sl.mode === '__custom') {
+    body.innerHTML = `${paletteHTML(sl.brush)}
+      <div class="composer">${tri({ balls: sl.balls, rods: sl.rods }, { size: 200, interactive: true, showIndex: true })}</div>
+      <div class="small muted">点位置放球（再点一次换成当前颜色或擦掉），点两球之间的短边加/去连接杆</div>
+      <div class="small" data-status></div>`;
+    checkCustom(k);
+  } else {
+    const s = S.substances[sl.mode];
+    body.innerHTML = tri(s.layout, { size: 170 }) + `<div class="small muted">${s.ball_count} 球 ${s.rod_count} 杆 · ${s.placements} 种摆法</div>`;
+  }
+}
+
+async function checkCustom(k) {
+  const el = $(`#slot-${k} [data-status]`); if (!el) return;
+  const spec = specOf(slots[k]);
+  if (!Object.keys(slots[k].balls).length) { el.innerHTML = '<span class="muted">还没有球</span>'; return; }
+  try {
+    const d = await api('/api/shape?spec=' + encodeURIComponent(spec));
+    if (specOf(slots[k]) !== spec) return;
+    el.innerHTML = !d.ok ? `<span style="color:#9b2c2c">${esc(d.problems.join('；'))}</span>`
+      : `<code>${esc(d.spec)}</code><br>${d.placements} 种摆法 · ` + (d.match
+        ? `<span class="tag hit">库中：${esc(d.match.name)}</span>` : `<span class="tag miss">库中不存在</span>`)
+        + ` <button class="btn" data-copy>复制条目</button>`;
+  } catch (err) { el.textContent = err.message; }
+}
+
+for (const k of ['a', 'b']) {
+  const el = $('#slot-' + k);
+  el.addEventListener('change', e => { if (e.target.tagName === 'SELECT') { slots[k].mode = e.target.value; renderSlot(k); } });
+  el.addEventListener('click', e => {
+    const sl = slots[k];
+    if (e.target.closest('[data-copy]')) { copy(snippet({ balls: sl.balls, rods: sl.rods })); return; }
+    if (sl.mode === '__custom' && editAt(e.target, sl, sl)) renderSlot(k);
+  });
+}
+
+let tryData = null;
+async function runTry() {
+  const a = refOf('a'), b = refOf('b');
+  if (!a) { toast('A 还没有内容'); return; }
+  $('#try-out').innerHTML = '<p class="muted">计算中…</p>';
+  try {
+    tryData = await api(`/api/try?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`);
+    renderTry();
+  } catch (err) { $('#try-out').innerHTML = `<p class="problems">${esc(err.message)}</p>`; }
+}
+
+function renderTry() {
+  if (!tryData) return;
+  const d = tryData, onlyHits = $('#try-hits').checked;
+  const items = d.items.filter(i => !onlyHits || i.target);
+  const shown = items.slice(0, 300);
+  $('#try-out').innerHTML = `<h3>${esc(d.title)}：共 ${d.total} 种不同结果，其中 ${d.hits} 种在组合库里</h3>
+    ${items.length > shown.length ? `<p class="muted">只显示前 ${shown.length} 种</p>` : ''}
+    <div class="results">${shown.map((it, n) => `<div class="result ${it.target ? 'hit' : ''}">
+      <div class="result-head">${it.target ? `<span class="tag hit">得到 ${esc(it.target.name)}</span>` : '<span class="tag miss">库中不存在</span>'}
+        <span class="kind kind-${KIND_CLASS[it.kind]}">${esc(it.kind)}</span>${it.variants > 1 ? `<span class="muted small">${it.variants} 种摆法</span>` : ''}
+        <button class="btn" data-n="${n}" data-act="toA">结果放到 A</button>
+        ${it.target ? '' : `<button class="btn" data-n="${n}" data-act="copy">复制条目</button>`}</div>
+      ${recipeView(it, { outName: it.target ? it.target.name : '？', text: false, bare: true })}</div>`).join('')}</div>`;
+  $('#try-out').shown = shown;
+}
+
+$('#try-out').addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  const it = $('#try-out').shown[+b.dataset.n];
+  if (b.dataset.act === 'copy') { copy(snippet(it.result)); return; }
+  if (it.target) slots.a.mode = it.target.id; else setCustom('a', it.result);
+  renderSlot('a'); window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+$('#try-run').onclick = runTry;
+$('#try-hits').onchange = renderTry;
+$('#try-swap').onclick = () => {
+  if (slots.b.mode === '__none') { toast('B 为空时不能交换'); return; }
+  [slots.a, slots.b] = [slots.b, slots.a]; renderSlot('a'); renderSlot('b');
+};
+
+// ---- 手动摆放 ----------------------------------------------------------------
+// 大三角绕几何中心的对称（作用在位置编号上），与后端 geometry._TRI_ROTATE / _TRI_MIRROR 一致
+const ROT_CW = { 0: 5, 5: 3, 3: 0, 2: 4, 4: 1, 1: 2 };
+const ROT_CCW = Object.fromEntries(Object.entries(ROT_CW).map(([a, b]) => [b, +a]));
+const MIRROR = { 0: 0, 1: 2, 2: 1, 3: 5, 5: 3, 4: 4 };
+const mslots = { a: { mode: null, layout: null, brush: null }, b: { mode: null, layout: null, brush: null } };
+let manRods = [], manData = null, manSeq = 0;
+
+const cloneLayout = l => ({ balls: { ...l.balls }, rods: [...(l.rods || [])] });
+const hasBalls = l => Object.keys(l.balls).length > 0;
+const rodKey = (a, b) => (a < b ? `${a}-${b}` : `${b}-${a}`);
+
+function permute(l, perm) {
+  const balls = {};
+  for (const [p, e] of Object.entries(l.balls)) balls[perm[p]] = e;
+  const rods = l.rods.map(r => { const [a, b] = r.split('-').map(Number); return rodKey(perm[a], perm[b]); }).sort();
+  return { balls, rods };
+}
+
+function translations(l) {
+  const at = {};
+  for (const [p, [q, r]] of Object.entries(S.rules.positions)) at[`${q},${r}`] = +p;
+  const out = [];
+  for (let dq = -2; dq <= 2; dq++) for (let dr = -2; dr <= 2; dr++) {
+    const map = {};
+    let ok = true;
+    for (const p of Object.keys(l.balls)) {
+      const [q, r] = S.rules.positions[p], t = at[`${q + dq},${r + dr}`];
+      if (t === undefined) { ok = false; break; }
+      map[p] = t;
+    }
+    if (ok) out.push(permute(l, map));
+  }
+  return out.sort((x, y) => specOf(x).localeCompare(specOf(y)));
+}
+
+function setMSlot(k, mode, layout) {
+  mslots[k].mode = mode;
+  mslots[k].layout = layout ? cloneLayout(layout) : mode.startsWith('__') ? { balls: {}, rods: [] } : cloneLayout(S.substances[mode].layout);
+}
+
+function renderMSlot(k, from) {
+  const sl = mslots[k], el = $('#mslot-' + k), ids = Object.keys(S.substances);
+  if (sl.mode == null || (!S.substances[sl.mode] && !sl.mode.startsWith('__'))) {
+    setMSlot(k, k === 'a' ? (ids.find(i => i === 'fire') ?? ids[0]) : (ids.find(i => i === 'water') ?? ids[0]));
+  }
+  if (sl.brush == null) sl.brush = S.rules.elements[0];
+  const custom = sl.mode === '__custom';
+  const opt = (v, label) => `<option value="${esc(v)}" ${sl.mode === v ? 'selected' : ''}>${esc(label)}</option>`;
+  const body = sl.mode === '__none'
+    ? '<p class="muted" style="padding-top:60px">不放 B：只摆 A，可以在结果上加杆</p>'
+    : `${custom ? paletteHTML(sl.brush) : ''}
+      <div class="${custom ? 'composer' : ''}">${tri(sl.layout, { size: 210, interactive: custom, showIndex: true, spin: true })}</div>
+      <div class="btns center">
+        <button class="btn" data-act="ccw" title="绕大三角中心逆时针转 120°">↺ 逆转</button>
+        <button class="btn" data-act="cw" title="绕大三角中心顺时针转 120°">↻ 顺转</button>
+        <button class="btn" data-act="flip" title="左右镜像">⇋ 翻转</button>
+        <button class="btn" data-act="move" title="在大三角里换一个放得下的位置">移动 ▸</button>
+        <button class="btn" data-act="reset">${custom ? '清空' : '复位'}</button>
+      </div>
+      ${custom ? '<div class="small muted">点位置放球，点两球之间的短边加/去连接杆</div>' : ''}
+      <div class="small" data-status></div>`;
+  el.innerHTML = `<div class="slot-title">${k.toUpperCase()}</div>
+    <select>${k === 'b' ? opt('__none', '无（只摆 A）') : ''}${ids.map(id => opt(id, `${S.substances[id].name}（${id}）`)).join('')}${opt('__custom', '自定义 / 编辑当前形状…')}</select>
+    <div class="slot-body">${body}</div>`;
+  if (from) {
+    const g = $('.spin', el);
+    if (g) {
+      g.style.transition = 'none'; g.style.transform = from;
+      g.getBoundingClientRect();
+      g.style.transition = 'transform .35s ease'; g.style.transform = 'none';
+    }
+  }
+  renderMStatus(k);
+}
+
+function renderMStatus(k) {
+  const el = $(`#mslot-${k} [data-status]`);
+  if (!el) return;
+  const sl = mslots[k];
+  if (!hasBalls(sl.layout)) { el.innerHTML = '<span class="muted">还没有球</span>'; return; }
+  const m = manData && manData.specs[k] === specOf(sl.layout) ? manData[k] : undefined;
+  el.innerHTML = `<code>${esc(specOf(sl.layout) || '')}</code> `
+    + (m === undefined ? '' : m ? `<span class="tag hit">${esc(m.name)}</span>` : '<span class="tag miss">库中不存在</span>');
+}
+
+function manChanged(k, from) {
+  manRods = [];
+  renderMSlot(k, from);
+  updateManual();
+}
+
+async function updateManual() {
+  const seq = ++manSeq, el = $('#man-result');
+  const a = mslots.a.layout, b = mslots.b.mode === '__none' ? null : mslots.b.layout;
+  if (!hasBalls(a)) { el.innerHTML = '<div class="slot-title">结果</div><p class="muted">A 还没有球</p>'; return; }
+  const specs = { a: specOf(a), b: b && hasBalls(b) ? specOf(b) : '' };
+  try {
+    const d = await api('/api/combine?' + new URLSearchParams({ ...specs, rods: manRods.join(',') }));
+    if (seq !== manSeq) return;
+    manData = { ...d, specs };
+    renderManResult(); renderMStatus('a'); renderMStatus('b');
+  } catch (err) {
+    if (seq === manSeq) el.innerHTML = `<div class="slot-title">结果</div><p class="problems">${esc(err.message)}</p>`;
+  }
+}
+
+function renderManResult() {
+  const d = manData, el = $('#man-result');
+  const overlap = d.steps[0]?.overlap || [];
+  const tag = m => m ? `<span class="tag hit">${esc(m.name)}</span>` : '<span class="tag miss">库中不存在</span>';
+  const steps = d.steps.map(s => {
+    const what = s.kind === '加杆' ? `在位置 ${s.edge.join('-')} 之间加杆`
+      : s.kind === '叠放' ? `叠放（位置 ${s.overlap.join('、')} 重叠，按 ${esc(S.dominance_text)} 覆盖）` : '并排放入（没有重叠）';
+    const same = s.same ? ` <span class="muted">（与 ${s.same} 相同，${s.same === 'A' ? 'B' : 'A'} 被完全覆盖）</span>` : '';
+    return `<li>${what} → ${tag(s.match)}${same}</li>`;
+  }).join('');
+  el.innerHTML = `<div class="slot-title">结果</div><div class="slot-body">
+    <div class="composer">${tri(d.result, { size: 210, interactive: true, mark: overlap, edges: manRods })}</div>
+    <div>${d.match ? `<span class="tag hit big">得到 ${esc(d.match.name)}</span>` : '<span class="tag miss big">库中不存在</span>'}
+      <span class="muted small">${d.ball_count} 球 ${d.rod_count} 杆</span></div>
+    ${steps ? `<ol class="steps">${steps}</ol>` : ''}
+    <div class="small"><code>${esc(d.spec)}</code></div>
+    <div class="btns center">
+      <button class="btn" data-act="toA">结果放到 A</button>
+      ${d.match ? '' : '<button class="btn" data-act="copy">复制条目</button>'}
+      ${manRods.length ? '<button class="btn" data-act="undo">撤销加杆</button>' : ''}
+    </div>
+    <div class="small muted">点结果里两球之间的短边加连接杆（杆加上就不能拆，这里的撤销只是试验用）</div></div>`;
+}
+
+for (const k of ['a', 'b']) {
+  const el = $('#mslot-' + k);
+  el.addEventListener('change', e => {
+    if (e.target.tagName !== 'SELECT') return;
+    const v = e.target.value;
+    // 切到自定义时保留当前形状，方便在库里物质的基础上改
+    setMSlot(k, v, v === '__custom' ? mslots[k].layout : null);
+    manChanged(k);
+  });
+  el.addEventListener('click', e => {
+    const sl = mslots[k];
+    const act = e.target.closest('[data-act]')?.dataset.act;
+    if (act === 'cw') { sl.layout = permute(sl.layout, ROT_CW); manChanged(k, 'rotate(-120deg)'); }
+    else if (act === 'ccw') { sl.layout = permute(sl.layout, ROT_CCW); manChanged(k, 'rotate(120deg)'); }
+    else if (act === 'flip') { sl.layout = permute(sl.layout, MIRROR); manChanged(k, 'scaleX(-1)'); }
+    else if (act === 'move') {
+      const all = translations(sl.layout);
+      if (all.length < 2) { toast('这个形状在大三角里没有别的位置可放'); return; }
+      const i = all.findIndex(l => specOf(l) === specOf(sl.layout));
+      sl.layout = all[(i + 1) % all.length]; manChanged(k);
+    } else if (act === 'reset') { setMSlot(k, sl.mode); manChanged(k); }
+    else if (!act && sl.mode === '__custom' && editAt(e.target, sl, sl.layout)) manChanged(k);
+  });
+}
+
+$('#man-result').addEventListener('click', e => {
+  if (!manData) return;
+  const act = e.target.closest('[data-act]')?.dataset.act;
+  if (act === 'toA') {
+    setMSlot('a', manData.match ? manData.match.id : '__custom', manData.result);
+    manChanged('a');
+  } else if (act === 'copy') copy(snippet(manData.result));
+  else if (act === 'undo') { manRods.pop(); updateManual(); }
+  const edge = e.target.closest('[data-edge]');
+  if (!edge) return;
+  const id = edge.dataset.edge, [a, b] = id.split('-');
+  if (manData.result.rods.includes(id)) { toast('这里已经有杆了（杆不能拆）'); return; }
+  if (!(a in manData.result.balls && b in manData.result.balls)) { toast('连接杆两端都要有球'); return; }
+  manRods.push(id); updateManual();
+});
+
+// ---- 探索 --------------------------------------------------------------------
+let exQuery = null, exItems = [];
+for (const id of ['#ex-max', '#ex-min']) {
+  const max = id === '#ex-max';
+  $(id).innerHTML = [...Array(max ? 6 : 7).keys()].map(i => max ? i + 1 : i)
+    .map(n => `<option ${(max ? n === 6 : n === 0) ? 'selected' : ''}>${n}</option>`).join('');
+}
+
+async function runExplore(more) {
+  if (!more) {
+    exQuery = { depth: $('#ex-depth').value, max_balls: $('#ex-max').value, min_balls: $('#ex-min').value };
+    exItems = []; $('#ex-out').innerHTML = '';
+    $('#ex-status').textContent = exQuery.depth === '3' ? '计算中…第 3 层可能要好几分钟，算完会缓存，之后翻页很快' : '计算中…';
+  }
+  const q = new URLSearchParams({ ...exQuery, offset: exItems.length, limit: 120 });
+  try {
+    const d = await api('/api/explore?' + q);
+    exItems.push(...d.items);
+    $('#ex-status').textContent = `共找到 ${d.total} 个库里还没有的形状` + (d.matched !== d.total ? `，其中 ${d.matched} 个不少于 ${exQuery.min_balls} 球` : '')
+      + `；已显示 ${exItems.length} 个（计算用时 ${d.seconds}s）`;
+    $('#ex-out').insertAdjacentHTML('beforeend', d.items.map((c, i) => candView(c, exItems.length - d.items.length + i)).join(''));
+    $('#ex-more').hidden = exItems.length >= d.matched;
+  } catch (err) { $('#ex-status').textContent = '出错：' + err.message; }
+}
+
+function candView(c, n) {
+  const extra = c.recipes.slice(1).map(r => recipeView(r, { size: 54 })).join('');
+  const hidden = c.ways - c.recipes.length;
+  return `<div class="cand">
+    <div class="cand-head">${tri(c.layout, { size: 110 })}
+      <div><b>${esc(c.ref)}</b> <span class="muted small">第 ${c.depth} 层</span><br>${c.ball_count} 球 ${c.rod_count} 杆 · ${c.ways} 种做法
+        <div class="btns"><button class="btn" data-n="${n}" data-act="try">拿去试验</button><button class="btn" data-n="${n}" data-act="man">拿去摆放</button><button class="btn" data-n="${n}" data-act="copy">复制条目</button>
+        ${c.ways > 1 ? `<button class="btn" data-act="open">全部做法</button>` : ''}</div></div></div>
+    ${recipeView(c.recipes[0], { size: 54 })}
+    <div class="more">${extra}${hidden > 0 ? `<p class="muted small">…还有 ${hidden} 种做法未列出</p>` : ''}</div></div>`;
+}
+
+$('#ex-out').addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  if (b.dataset.act === 'open') { b.closest('.cand').classList.toggle('open'); return; }
+  const c = exItems[+b.dataset.n];
+  if (b.dataset.act === 'copy') copy(snippet(c.layout));
+  else if (b.dataset.act === 'man') { setMSlot('a', '__custom', c.layout); manChanged('a'); showTab('manual'); }
+  else { setCustom('a', c.layout); renderSlot('a'); showTab('try'); }
+});
+$('#ex-run').onclick = () => runExplore(false);
+$('#ex-more').onclick = () => runExplore(true);
+
+// ---- 总体 --------------------------------------------------------------------
+function showTab(name) {
+  document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === name));
+  document.querySelectorAll('main > section').forEach(s => s.hidden = s.id !== 'tab-' + name);
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => showTab(b.dataset.tab));
+
+async function load() {
+  try { S = await api('/api/state'); }
+  catch (err) { $('#problems').innerHTML = `<div class="problems">${esc(err.message)}</div>`; return; }
+  S.recipeById = Object.fromEntries(S.recipes.map(r => [r.id, r]));
+  const n = Object.keys(S.substances).length;
+  $('#info').innerHTML = `${n} 个物质 · ${S.recipes.length} 条库内配方 · 覆盖顺序 ${esc(S.dominance_text)}<br>${esc(S.library_path)}`;
+  $('#problems').innerHTML = S.problems.length
+    ? `<div class="problems"><b>组合库有问题（这些条目已跳过）：</b><br>${S.problems.map(esc).join('<br>')}</div>` : '';
+  renderLibrary(); renderSlot('a'); renderSlot('b');
+  manRods = []; manData = null; renderMSlot('a'); renderMSlot('b'); updateManual();
+  tryData = null; $('#try-out').innerHTML = '';
+  exItems = []; $('#ex-out').innerHTML = ''; $('#ex-status').textContent = ''; $('#ex-more').hidden = true;
+}
+$('#reload').onclick = async () => { await load(); toast('已重新读取'); };
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{"id": "q01", "q": "纯净水怎么获得？", "relevant": ["item:001#获取"], "items": ["001"], "intents": ["获取"]}
+{"id": "q02", "q": "哪里能找到水？", "relevant": ["item:001#获取"], "items": ["001"], "intents": ["获取"], "note": "别名"}
+{"id": "q03", "q": "水龙头那里能拿到什么？", "relevant": ["item:001#获取"], "items": [], "intents": ["获取", "地点"]}
+{"id": "q04", "q": "废气排放口能收集到什么东西？", "relevant": ["item:001#获取"], "items": [], "intents": ["获取", "地点"]}
+{"id": "q05", "q": "纯净水可以用来做什么？", "relevant": ["item:001#用处"], "items": ["001"], "intents": ["关系"]}
+{"id": "q06", "q": "工业上最容易弄到的冷却剂是什么？", "relevant": ["item:001#用处"], "items": [], "intents": ["关系", "信息"]}
+{"id": "q07", "q": "水在炼金术里有什么地位？", "relevant": ["item:001#炼金"], "items": ["001"], "intents": ["设定"]}
+{"id": "q08", "q": "从化学角度看，水由哪些元素组成？", "relevant": ["item:001#科学"], "items": ["001"], "intents": ["设定", "信息"]}
+{"id": "q09", "q": "纯净水条目开头那句引言出自哪里？", "relevant": ["item:001#题记"], "items": ["001"], "intents": ["设定"]}
+{"id": "q10", "q": "氢气怎么得到？", "relevant": ["item:002#获取", "device:D001#用途"], "items": ["002"], "intents": ["获取"]}
+{"id": "q11", "q": "电解纯净水会得到什么？", "relevant": ["device:D001#用途", "item:001#用处", "item:002#获取"], "items": ["001"], "intents": ["关系"], "process": true}
+{"id": "q12", "q": "氢气要怎么保存？", "relevant": ["item:002#存储", "device:D001#注意"], "items": ["002"], "intents": ["信息"]}
+{"id": "q13", "q": "在普通加热炉里点燃氢气会发生什么？", "relevant": ["item:002#存储"], "items": ["002"], "intents": ["信息"]}
+{"id": "q14", "q": "核聚变反应堆主要烧什么燃料？", "relevant": ["item:002#用处"], "items": [], "intents": ["关系", "信息"]}
+{"id": "q15", "q": "为什么氢气不由水和气两种元素组成？", "relevant": ["item:002#炼金"], "items": ["002"], "intents": ["设定"]}
+{"id": "q16", "q": "氕、氘、氚是什么？", "relevant": ["item:002#科学"], "items": [], "intents": ["信息", "设定"]}
+{"id": "q17", "q": "在顶楼装牵引装置能抓到什么？", "relevant": ["item:002#获取", "item:001#获取"], "items": [], "intents": ["获取"]}
+{"id": "q18", "q": "捕获流星能得到哪些东西？", "relevant": ["item:002#获取", "item:001#获取"], "items": [], "intents": ["获取"]}
+{"id": "q19", "q": "氢气和氧气反应会生成什么？", "relevant": ["item:002#用处", "item:001#获取"], "items": ["002", "008"], "intents": ["关系"]}
+{"id": "q20", "q": "光有什么用？", "relevant": ["item:003#用处"], "items": ["003"], "intents": ["关系"]}
+{"id": "q21", "q": "怎样获得光？", "relevant": ["item:003#获取"], "items": ["003"], "intents": ["获取"]}
+{"id": "q22", "q": "太阳能机构的效率受什么影响？", "relevant": ["item:003#获取"], "items": [], "intents": ["信息"]}
+{"id": "q23", "q": "光在炼金术里代表什么？", "relevant": ["item:003#炼金"], "items": ["003"], "intents": ["设定"]}
+{"id": "q24", "q": "光的本质被物理学完全理解了吗？", "relevant": ["item:003#科学"], "items": ["003"], "intents": ["设定", "信息"]}
+{"id": "q25", "q": "“要有光”这句话出自哪里？", "relevant": ["item:003#题记"], "items": ["003"], "intents": ["设定"]}
+{"id": "q26", "q": "灯笼果有什么特别的？", "relevant": ["item:003#获取"], "items": [], "intents": ["信息"]}
+{"id": "q27", "q": "空间站的设施靠什么供电？", "relevant": ["item:003#用处"], "items": [], "intents": ["关系", "信息"]}
+{"id": "q28", "q": "收集氢气需要借助什么设备？", "relevant": ["device:D001#注意", "item:002#存储"], "items": ["002"], "intents": ["获取"], "process": true}
+{"id": "q29", "q": "“诸水之间要有空气”这句话和哪个物品有关？", "relevant": ["item:002#题记"], "items": [], "intents": ["设定"]}
+{"id": "q30", "q": "住处顶楼能获得哪些物品？", "relevant": ["item:002#获取", "item:003#获取", "item:001#获取"], "items": [], "intents": ["获取", "地点"]}
+{"id": "q31", "history": [{"role": "user", "content": "氢气是什么？"}, {"role": "assistant", "content": "氢气是最轻、也是宇宙中最丰富的元素，可以作为燃料。"}], "q": "它要怎么存放？", "relevant": ["item:002#存储", "device:D001#注意"], "items": ["002"], "intents": ["信息"], "note": "指代"}
+{"id": "q32", "history": [{"role": "user", "content": "说说光吧"}, {"role": "assistant", "content": "光是创世的第一要素，也是宇宙中速度的极限。"}], "q": "那怎么才能弄到它？", "relevant": ["item:003#获取"], "items": ["003"], "intents": ["获取"], "note": "指代"}
+{"id": "q33", "history": [{"role": "user", "content": "纯净水怎么来的？"}, {"role": "assistant", "content": "可以在住处种植区的水龙头取自来水，也可以去活塞平台收集冰块再加热蒸馏。"}], "q": "后面那个地方具体在哪收集？", "relevant": ["item:001#获取"], "items": ["006"], "intents": ["地点", "获取"], "note": "指代"}

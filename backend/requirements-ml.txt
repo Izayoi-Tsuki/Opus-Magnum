@@ -1,0 +1,6 @@
+# 可选增强：向量检索 + 交叉重排（需先下载模型权重，见 bootstrap_models.py）。
+# 不装这些后端也能跑（自动退化为图谱 + BM25）。
+-r requirements.txt
+sentence-transformers>=2.7
+torch>=2.2
+huggingface_hub>=0.23

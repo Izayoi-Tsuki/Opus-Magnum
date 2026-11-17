@@ -1,0 +1,9 @@
+# 后端核心依赖（不含任何模型权重）。
+# 只装这些即可运行：图谱 + BM25 检索、图鉴/地图/图谱数据接口、炼金引擎。
+# 向量检索 / 重排 / LLM 问答为可选增强，见 requirements-ml.txt 与 README。
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+numpy>=1.26
+jieba>=0.42
+rank-bm25>=0.2.2

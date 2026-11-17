@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "Framelink MCP for Figma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--figma-api-key=figd_VWT4WvZJttCiC1FLMsMW55-43ZFrfDKQquxGtJ_J",
+        "--stdio"
+      ]
+    },
+    "figma-bridge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@gethopp/figma-mcp-bridge"
+      ]
+    },
+    "blender": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "uvx",
+        "blender-mcp"
+      ]
+    },
+    "photoshop": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "uvx",
+        "--python",
+        "3.11",
+        "photoshop-mcp-server"
+      ],
+      "env": {
+        "PS_VERSION": "2025"
+      }
+    },
+    "unreal-mcp": {
+      "url": "http://127.0.0.1:8000/mcp",
+      "type": "streamable-http"
+    },
+    "fennara": {
+      "command": "C:\\Users\\Administrator\\AppData\\Local\\Fennara\\bin\\fennara-mcp.exe",
+      "args": [
+        "--project-path",
+        "F:\\GODOT\\Primo"
+      ]
+    },
+    "laya": {
+      "command": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\laya-mcp-server.exe",
+      "env": {
+        "HF_HOME": "C:\\Users\\Administrator\\Desktop\\Laya\\models",
+        "HF_HUB_OFFLINE": "1",
+        "USE_TF": "0",
+        "LAYA_DEVICE": "cuda",
+        "LAYA_PRELOAD": "1"
+      }
+    }
+  }
+}

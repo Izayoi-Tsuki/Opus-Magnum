@@ -1,0 +1,453 @@
+{
+  "_说明": "合成实验数据：由各篇 front matter 生成。",
+  "items": {
+    "001": {
+      "name": "纯净水",
+      "state": "液态",
+      "aliases": [
+        "水"
+      ],
+      "file": "001_纯净水.md",
+      "stub": false
+    },
+    "002": {
+      "name": "氢气",
+      "state": "气态",
+      "aliases": [],
+      "file": "002_氢气.md",
+      "stub": false
+    },
+    "003": {
+      "name": "光",
+      "state": "能量",
+      "aliases": [],
+      "file": "003_光.md",
+      "stub": false
+    },
+    "004": {
+      "name": "电",
+      "state": "能量",
+      "aliases": [
+        "电能",
+        "电力"
+      ],
+      "file": "004_电.md",
+      "stub": false
+    },
+    "006": {
+      "name": "冰块",
+      "state": "固态",
+      "aliases": [
+        "冰"
+      ],
+      "file": "006_冰块.md",
+      "stub": false
+    },
+    "008": {
+      "name": "氧气",
+      "state": "气态",
+      "aliases": [
+        "氧"
+      ],
+      "file": "008_氧气.md",
+      "stub": false
+    },
+    "901": {
+      "name": "臭氧",
+      "state": "气态",
+      "aliases": [],
+      "file": "901_臭氧.md",
+      "stub": false
+    },
+    "902": {
+      "name": "液氧",
+      "state": "液态",
+      "aliases": [
+        "液态氧"
+      ],
+      "file": "902_液氧.md",
+      "stub": false
+    },
+    "903": {
+      "name": "干冰",
+      "state": "固态",
+      "aliases": [
+        "固态二氧化碳"
+      ],
+      "file": "903_干冰.md",
+      "stub": false
+    },
+    "904": {
+      "name": "重水",
+      "state": "液态",
+      "aliases": [
+        "氧化氘"
+      ],
+      "file": "904_重水.md",
+      "stub": false
+    },
+    "905": {
+      "name": "二氧化碳",
+      "state": "气态",
+      "aliases": [
+        "碳酸气"
+      ],
+      "file": "905_二氧化碳.md",
+      "stub": false
+    },
+    "906": {
+      "name": "电池",
+      "state": "固态",
+      "aliases": [
+        "蓄电池"
+      ],
+      "file": "906_电池.md",
+      "stub": false
+    },
+    "907": {
+      "name": "氘",
+      "state": "气态",
+      "aliases": [
+        "重氢"
+      ],
+      "file": "907_氘.md",
+      "stub": false
+    },
+    "908": {
+      "name": "灯笼果",
+      "state": "固态",
+      "aliases": [
+        "发光果"
+      ],
+      "file": "908_灯笼果.md",
+      "stub": false
+    },
+    "909": {
+      "name": "汤",
+      "state": "液态",
+      "aliases": [
+        "灯笼果汤"
+      ],
+      "file": "909_汤.md",
+      "stub": false
+    },
+    "910": {
+      "name": "果酒",
+      "state": "液态",
+      "aliases": [
+        "灯笼果酒"
+      ],
+      "file": "910_果酒.md",
+      "stub": false
+    },
+    "911": {
+      "name": "铁矿石",
+      "state": "固态",
+      "aliases": [
+        "铁矿"
+      ],
+      "file": "911_铁矿石.md",
+      "stub": false
+    },
+    "912": {
+      "name": "铁锭",
+      "state": "固态",
+      "aliases": [
+        "铁"
+      ],
+      "file": "912_铁锭.md",
+      "stub": false
+    },
+    "913": {
+      "name": "铁锈",
+      "state": "固态",
+      "aliases": [
+        "氧化铁"
+      ],
+      "file": "913_铁锈.md",
+      "stub": false
+    },
+    "914": {
+      "name": "流星碎片",
+      "state": "固态",
+      "aliases": [
+        "陨石"
+      ],
+      "file": "914_流星碎片.md",
+      "stub": false
+    },
+    "915": {
+      "name": "甲烷",
+      "state": "气态",
+      "aliases": [
+        "沼气"
+      ],
+      "file": "915_甲烷.md",
+      "stub": false
+    },
+    "916": {
+      "name": "塑料",
+      "state": "固态",
+      "aliases": [],
+      "file": "916_塑料.md",
+      "stub": false
+    },
+    "917": {
+      "name": "玻璃",
+      "state": "固态",
+      "aliases": [],
+      "file": "917_玻璃.md",
+      "stub": false
+    },
+    "918": {
+      "name": "硅砂",
+      "state": "固态",
+      "aliases": [
+        "石英砂"
+      ],
+      "file": "918_硅砂.md",
+      "stub": false
+    },
+    "919": {
+      "name": "堆肥",
+      "state": "固态",
+      "aliases": [
+        "肥料"
+      ],
+      "file": "919_堆肥.md",
+      "stub": false
+    },
+    "920": {
+      "name": "清洁剂",
+      "state": "液态",
+      "aliases": [
+        "臭氧水"
+      ],
+      "file": "920_清洁剂.md",
+      "stub": false
+    },
+    "921": {
+      "name": "铜矿石",
+      "state": "固态",
+      "aliases": [
+        "铜矿"
+      ],
+      "file": "921_铜矿石.md",
+      "stub": false
+    },
+    "922": {
+      "name": "铜锭",
+      "state": "固态",
+      "aliases": [
+        "铜"
+      ],
+      "file": "922_铜锭.md",
+      "stub": false
+    },
+    "923": {
+      "name": "导线",
+      "state": "固态",
+      "aliases": [
+        "电线",
+        "电缆"
+      ],
+      "file": "923_导线.md",
+      "stub": false
+    },
+    "924": {
+      "name": "钢锭",
+      "state": "固态",
+      "aliases": [
+        "钢",
+        "钢材"
+      ],
+      "file": "924_钢锭.md",
+      "stub": false
+    },
+    "925": {
+      "name": "磁铁",
+      "state": "固态",
+      "aliases": [
+        "磁石",
+        "永磁体"
+      ],
+      "file": "925_磁铁.md",
+      "stub": false
+    },
+    "926": {
+      "name": "铝锭",
+      "state": "固态",
+      "aliases": [
+        "铝"
+      ],
+      "file": "926_铝锭.md",
+      "stub": false
+    },
+    "927": {
+      "name": "硅片",
+      "state": "固态",
+      "aliases": [
+        "硅晶圆",
+        "单晶硅"
+      ],
+      "file": "927_硅片.md",
+      "stub": false
+    },
+    "928": {
+      "name": "陶瓷",
+      "state": "固态",
+      "aliases": [
+        "耐火砖",
+        "陶土"
+      ],
+      "file": "928_陶瓷.md",
+      "stub": false
+    },
+    "929": {
+      "name": "氮气",
+      "state": "气态",
+      "aliases": [],
+      "file": "929_氮气.md",
+      "stub": false
+    },
+    "930": {
+      "name": "氨",
+      "state": "气态",
+      "aliases": [
+        "阿摩尼亚"
+      ],
+      "file": "930_氨.md",
+      "stub": false
+    },
+    "931": {
+      "name": "盐",
+      "state": "固态",
+      "aliases": [
+        "食盐",
+        "氯化钠"
+      ],
+      "file": "931_盐.md",
+      "stub": false
+    },
+    "932": {
+      "name": "氯气",
+      "state": "气态",
+      "aliases": [],
+      "file": "932_氯气.md",
+      "stub": false
+    },
+    "933": {
+      "name": "烧碱",
+      "state": "固态",
+      "aliases": [
+        "氢氧化钠",
+        "火碱"
+      ],
+      "file": "933_烧碱.md",
+      "stub": false
+    },
+    "934": {
+      "name": "肥皂",
+      "state": "固态",
+      "aliases": [
+        "皂块"
+      ],
+      "file": "934_肥皂.md",
+      "stub": false
+    },
+    "935": {
+      "name": "盐酸",
+      "state": "液态",
+      "aliases": [
+        "氢氯酸"
+      ],
+      "file": "935_盐酸.md",
+      "stub": false
+    },
+    "936": {
+      "name": "双氧水",
+      "state": "液态",
+      "aliases": [
+        "过氧化氢"
+      ],
+      "file": "936_双氧水.md",
+      "stub": false
+    },
+    "937": {
+      "name": "小麦",
+      "state": "固态",
+      "aliases": [
+        "麦子",
+        "麦粒"
+      ],
+      "file": "937_小麦.md",
+      "stub": false
+    },
+    "938": {
+      "name": "面粉",
+      "state": "固态",
+      "aliases": [
+        "麦粉"
+      ],
+      "file": "938_面粉.md",
+      "stub": false
+    },
+    "939": {
+      "name": "面包",
+      "state": "固态",
+      "aliases": [
+        "麦饼"
+      ],
+      "file": "939_面包.md",
+      "stub": false
+    },
+    "940": {
+      "name": "蜂蜜",
+      "state": "液态",
+      "aliases": [
+        "蜂糖"
+      ],
+      "file": "940_蜂蜜.md",
+      "stub": false
+    },
+    "941": {
+      "name": "食用油",
+      "state": "液态",
+      "aliases": [
+        "植物油",
+        "麦胚油"
+      ],
+      "file": "941_食用油.md",
+      "stub": false
+    },
+    "942": {
+      "name": "灯",
+      "state": "固态",
+      "aliases": [
+        "电灯",
+        "照明灯"
+      ],
+      "file": "942_灯.md",
+      "stub": false
+    },
+    "943": {
+      "name": "木炭",
+      "state": "固态",
+      "aliases": [
+        "炭",
+        "焦炭"
+      ],
+      "file": "943_木炭.md",
+      "stub": false
+    },
+    "944": {
+      "name": "水银",
+      "state": "液态",
+      "aliases": [
+        "汞"
+      ],
+      "file": "944_水银.md",
+      "stub": false
+    }
+  }
+}

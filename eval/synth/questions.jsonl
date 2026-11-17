@@ -1,0 +1,109 @@
+{"id": "s001", "q": "臭氧是怎么制造的？", "relevant": ["item:901#获取", "device:D007#用途"], "items": ["901"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s002", "q": "液氧要怎么存放？", "relevant": ["item:902#存储"], "items": ["902"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s003", "q": "干冰可以用来做什么？", "relevant": ["item:903#用处"], "items": ["903"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s004", "q": "重水能喝吗？", "relevant": ["item:904#注意"], "items": ["904"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s005", "q": "二氧化碳从哪里获得？", "relevant": ["item:905#获取"], "items": ["905"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s006", "q": "电池是怎么做出来的？", "relevant": ["item:906#获取"], "items": ["906"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s007", "q": "氘有什么用？", "relevant": ["item:907#用处"], "items": ["907"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s008", "q": "灯笼果怎么种？", "relevant": ["item:908#获取"], "items": ["908"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s009", "q": "汤能起什么作用？", "relevant": ["item:909#用处"], "items": ["909"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s010", "q": "果酒怎么酿？", "relevant": ["item:910#获取"], "items": ["910"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s011", "q": "铁矿石能用来做什么？", "relevant": ["item:911#用处", "device:D004#用途"], "items": ["911"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s012", "q": "铁锭从哪里来？", "relevant": ["item:912#获取", "device:D004#用途"], "items": ["912"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s013", "q": "铁锈有什么用途？", "relevant": ["item:913#用处"], "items": ["913"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s014", "q": "流星碎片怎么获得？", "relevant": ["item:914#获取", "device:D002#用途"], "items": ["914"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s015", "q": "甲烷怎么生产？", "relevant": ["item:915#获取", "device:D006#用途"], "items": ["915"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s016", "q": "使用塑料有哪些注意事项？", "relevant": ["item:916#注意"], "items": ["916"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s017", "q": "玻璃是怎么制成的？", "relevant": ["item:917#获取", "device:D004#用途", "item:917#科学"], "items": ["917"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s018", "q": "硅砂有什么用？", "relevant": ["item:918#用处"], "items": ["918"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s019", "q": "堆肥怎么做？", "relevant": ["item:919#获取"], "items": ["919"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s020", "q": "清洁剂怎么制作？", "relevant": ["item:920#获取"], "items": ["920"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s021", "q": "电池为什么要远离水？", "relevant": ["item:906#存储"], "items": ["906"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s022", "q": "冰块怎么保存？", "relevant": ["item:006#存储"], "items": ["006"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s023", "q": "氧气有什么用处？", "relevant": ["item:008#用处"], "items": ["008"], "intents": ["关系"], "type": "直接点名"}
+{"id": "s024", "q": "氧气是怎么得到的？", "relevant": ["item:008#获取", "device:D001#用途"], "items": ["008"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s025", "q": "电从哪里来？", "relevant": ["item:004#获取", "device:D003#用途"], "items": ["004"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s026", "q": "冰块从哪里获取？", "relevant": ["item:006#获取"], "items": ["006"], "intents": ["获取"], "type": "直接点名"}
+{"id": "s027", "q": "甲烷有什么危险？", "relevant": ["item:915#注意"], "items": ["915"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s028", "q": "干冰存放要注意什么？", "relevant": ["item:903#存储", "item:903#注意"], "items": ["903"], "intents": ["信息"], "type": "直接点名"}
+{"id": "s029", "q": "臭氧和氧气在分子结构上有什么不同？", "relevant": ["item:901#科学"], "items": ["901", "008"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s030", "q": "干冰为什么叫“干”冰？", "relevant": ["item:903#科学"], "items": ["903"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s031", "q": "灯笼果为什么会发光？", "relevant": ["item:908#科学"], "items": ["908"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s032", "q": "液氧是什么颜色的？", "relevant": ["item:902#科学"], "items": ["902"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s033", "q": "果酒为什么会有气泡？", "relevant": ["item:910#科学"], "items": ["910"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s034", "q": "铁锈是怎么形成的？", "relevant": ["item:913#科学", "item:912#科学"], "items": ["913"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s035", "q": "堆肥发酵的时候会产生什么气体？", "relevant": ["item:919#科学"], "items": ["919"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s036", "q": "电是什么？", "relevant": ["item:004#科学"], "items": ["004"], "intents": ["信息"], "type": "科学设定"}
+{"id": "s037", "q": "流星碎片条目开头的引言出自哪里？", "relevant": ["item:914#题记"], "items": ["914"], "intents": ["设定"], "type": "题记"}
+{"id": "s038", "q": "玻璃的题记说了什么？", "relevant": ["item:917#题记"], "items": ["917"], "intents": ["设定"], "type": "题记"}
+{"id": "s039", "q": "哪个物品的题记是“你本是尘土，仍要归于尘土”？", "relevant": ["item:919#题记"], "items": [], "intents": ["设定"], "type": "题记"}
+{"id": "s040", "q": "“求你用牛膝草洁净我”这句话出现在哪个物品的条目里？", "relevant": ["item:920#题记"], "items": [], "intents": ["设定"], "type": "题记"}
+{"id": "s041", "q": "诗篇119:105 是哪个物品的题记？", "relevant": ["item:908#题记"], "items": [], "intents": ["设定"], "type": "题记"}
+{"id": "s042", "q": "冰块的引言是什么？", "relevant": ["item:006#题记"], "items": ["006"], "intents": ["设定"], "type": "题记"}
+{"id": "s043", "q": "沼气是怎么来的？", "relevant": ["item:915#获取"], "items": ["915"], "intents": ["获取"], "type": "别名"}
+{"id": "s044", "q": "陨石能拆出什么东西？", "relevant": ["item:914#用处", "item:911#获取", "item:918#获取"], "items": ["914"], "intents": ["关系"], "type": "别名"}
+{"id": "s045", "q": "氧化铁能回收利用吗？", "relevant": ["item:913#用处"], "items": ["913"], "intents": ["关系"], "type": "别名"}
+{"id": "s046", "q": "重氢要放在哪里保存？", "relevant": ["item:907#存储"], "items": ["907"], "intents": ["信息"], "type": "别名"}
+{"id": "s047", "q": "蓄电池去哪买？", "relevant": ["item:906#获取"], "items": ["906"], "intents": ["获取"], "type": "别名"}
+{"id": "s048", "q": "发光果有什么用？", "relevant": ["item:908#用处"], "items": ["908"], "intents": ["关系"], "type": "别名"}
+{"id": "s049", "q": "碳酸气对种植有什么帮助？", "relevant": ["item:905#用处"], "items": ["905"], "intents": ["关系"], "type": "别名"}
+{"id": "s050", "q": "肥料是给什么作物用的？", "relevant": ["item:919#用处"], "items": ["919"], "intents": ["关系"], "type": "别名"}
+{"id": "s051", "q": "石英砂能做什么？", "relevant": ["item:918#用处"], "items": ["918"], "intents": ["关系"], "type": "别名"}
+{"id": "s052", "q": "电能怎么储存起来？", "relevant": ["item:004#存储"], "items": ["004"], "intents": ["信息"], "type": "别名"}
+{"id": "s053", "q": "臭氧水能喝吗？", "relevant": ["item:920#注意"], "items": ["920"], "intents": ["信息"], "type": "别名"}
+{"id": "s054", "q": "冶炼炉用什么做燃料？", "relevant": ["device:D004#注意"], "items": [], "intents": ["信息"], "type": "别名"}
+{"id": "s055", "q": "什么东西能让熔炉的温度更高？", "relevant": ["device:D004#注意", "item:008#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s056", "q": "飞船的推进剂一般用什么？", "relevant": ["item:902#用处", "item:915#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s057", "q": "反应堆舱的核聚变用什么当燃料？", "relevant": ["item:907#用处", "item:004#获取"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s058", "q": "什么东西可以当红色颜料？", "relevant": ["item:913#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s059", "q": "有没有不用电也能照明的东西？", "relevant": ["item:908#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s060", "q": "用什么给餐具消毒比较好？", "relevant": ["item:920#用处", "item:901#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s061", "q": "喝什么可以恢复体力？", "relevant": ["item:909#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s062", "q": "送什么礼物能增进居民的好感？", "relevant": ["item:910#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s063", "q": "核反应堆里的中子慢化剂用的是什么？", "relevant": ["item:904#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s064", "q": "太阳能板的面板是用什么做的？", "relevant": ["device:D003#用途", "item:917#用处", "item:918#用处"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s065", "q": "有什么东西会被磁铁吸引？", "relevant": ["item:902#科学"], "items": [], "intents": ["信息"], "type": "无物品名"}
+{"id": "s066", "q": "什么东西不会融化、而是直接变成气体？", "relevant": ["item:903#科学"], "items": [], "intents": ["信息"], "type": "无物品名"}
+{"id": "s067", "q": "空间站用什么设备回收废气？", "relevant": ["device:D006#用途"], "items": [], "intents": ["关系"], "type": "无物品名"}
+{"id": "s068", "q": "电池的外壳用什么材料？", "relevant": ["item:916#用处", "item:906#获取"], "items": ["906"], "intents": ["关系"], "type": "多步关系"}
+{"id": "s069", "q": "铁矿石和铁锈都能炼出铁锭，它们有什么区别？", "relevant": ["item:913#科学", "item:911#科学", "item:912#获取"], "items": ["911", "913"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s070", "q": "干冰和冰块哪个冷却效果更好？", "relevant": ["item:903#用处", "item:006#用处"], "items": ["903", "006"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s071", "q": "液氧能装进高压气罐吗？", "relevant": ["item:902#存储"], "items": ["902"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s072", "q": "臭氧能长期储存吗？", "relevant": ["item:901#注意"], "items": ["901"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s073", "q": "重水和纯净水从外观上能分辨出来吗？", "relevant": ["item:904#注意", "item:904#科学"], "items": ["904", "001"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s074", "q": "清洁剂和纯净水都能用来清洁，哪个去污能力更强？", "relevant": ["item:920#用处", "item:001#用处"], "items": ["920", "001"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s075", "q": "氢气和氘是什么关系？", "relevant": ["item:907#科学"], "items": ["907", "002"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s076", "q": "能用熔炉点燃氢气吗？", "relevant": ["device:D004#注意"], "items": ["002"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s077", "q": "液氧和氧气有什么区别？", "relevant": ["item:902#科学"], "items": ["902", "008"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s078", "q": "能用清洁剂给铁制品除锈吗？", "relevant": ["item:920#注意"], "items": ["920"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s079", "q": "塑料瓶能用来装液氧吗？", "relevant": ["item:916#注意", "item:902#注意"], "items": ["916", "902"], "intents": ["信息"], "type": "相似辨别"}
+{"id": "s080", "q": "汤和果酒都用灯笼果做，做法有什么不同？", "relevant": ["item:909#获取", "item:910#获取"], "items": ["909", "910", "908"], "intents": ["获取"], "type": "相似辨别"}
+{"id": "s081", "q": "要得到铁锭，最初的原料从哪里来？", "relevant": ["item:911#获取", "item:914#获取", "item:912#获取", "device:D002#用途"], "items": ["912"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s082", "q": "做玻璃的原料从哪里获得？", "relevant": ["item:918#获取", "item:917#获取"], "items": ["917"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s083", "q": "怎么从二氧化碳一步步得到塑料？", "relevant": ["item:915#获取", "item:916#获取", "device:D006#用途"], "items": ["905", "916"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s084", "q": "氘是怎么获得的？", "relevant": ["item:907#获取", "item:904#用处"], "items": ["907"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s085", "q": "喝剩的汤渣可以拿来干什么？", "relevant": ["item:909#存储", "item:919#获取"], "items": ["909"], "intents": ["关系"], "type": "多步关系"}
+{"id": "s086", "q": "堆肥能让什么长得更好？那东西又能做成什么？", "relevant": ["item:919#用处", "item:908#用处"], "items": ["919"], "intents": ["关系"], "type": "多步关系"}
+{"id": "s087", "q": "制造臭氧要用什么原料，那个原料又怎么来？", "relevant": ["item:901#获取", "item:008#获取"], "items": ["901"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s088", "q": "制造电池需要的材料各自从哪里来？", "relevant": ["item:906#获取", "item:912#获取", "item:916#获取"], "items": ["906"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s089", "q": "萨巴蒂尔反应器会产出哪些东西？", "relevant": ["device:D006#用途"], "items": [], "intents": ["关系"], "type": "多步关系"}
+{"id": "s090", "q": "想做清洁剂，需要用到哪些设备？", "relevant": ["item:920#获取", "device:D007#用途"], "items": ["920"], "intents": ["获取"], "type": "多步关系"}
+{"id": "s091", "q": "废料场能弄到什么东西？", "relevant": ["item:914#用处", "item:911#获取", "item:918#获取", "item:913#获取", "item:006#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s092", "q": "化工实验室里有哪些设备？", "relevant": ["device:D006#用途", "device:D007#用途"], "items": [], "intents": ["地点"], "type": "地点"}
+{"id": "s093", "q": "住处顶楼能装些什么？", "relevant": ["device:D002#用途", "device:D003#用途", "item:001#获取", "item:002#获取", "item:003#获取", "item:004#获取"], "items": [], "intents": ["地点"], "type": "地点"}
+{"id": "s094", "q": "杂货铺都卖些什么？", "relevant": ["item:906#获取", "item:903#获取", "item:912#获取", "item:916#获取", "item:917#获取", "item:920#获取", "item:908#获取", "item:004#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s095", "q": "停泊港能买到什么？", "relevant": ["item:904#获取", "item:907#获取", "item:902#获取", "item:911#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s096", "q": "酒馆供应什么？", "relevant": ["item:909#获取", "item:910#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s097", "q": "熔炉间能做些什么？", "relevant": ["device:D004#用途"], "items": [], "intents": ["地点"], "type": "地点"}
+{"id": "s098", "q": "在住处厨房可以做出哪些东西？", "relevant": ["item:909#获取", "item:910#获取", "item:006#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s099", "q": "活塞平台的废气排放口能收集到什么？", "relevant": ["item:905#获取", "item:006#获取", "item:001#获取"], "items": [], "intents": ["获取", "地点"], "type": "地点"}
+{"id": "s100", "history": [{"role": "user", "content": "甲烷是什么？"}, {"role": "assistant", "content": "甲烷是最简单的有机物，无色无味，极易燃烧。"}], "q": "它能用来做什么？", "relevant": ["item:915#用处"], "items": ["915"], "intents": ["关系"], "type": "多轮指代"}
+{"id": "s101", "history": [{"role": "user", "content": "说说铁锈"}, {"role": "assistant", "content": "铁锈是铁和氧气、水作用后生成的红褐色氧化铁。"}], "q": "怎么把它变回铁？", "relevant": ["item:913#用处", "device:D004#用途", "item:912#获取"], "items": ["913"], "intents": ["关系"], "type": "多轮指代"}
+{"id": "s102", "history": [{"role": "user", "content": "液氧是什么？"}, {"role": "assistant", "content": "液氧是冷却到零下一百八十多度后的氧气，呈淡蓝色。"}], "q": "它危险吗？", "relevant": ["item:902#注意"], "items": ["902"], "intents": ["信息"], "type": "多轮指代"}
+{"id": "s103", "history": [{"role": "user", "content": "灯笼果是什么？"}, {"role": "assistant", "content": "灯笼果是一种会自己发光的浆果。"}], "q": "摘下来以后能放多久？", "relevant": ["item:908#存储"], "items": ["908"], "intents": ["信息"], "type": "多轮指代"}
+{"id": "s104", "history": [{"role": "user", "content": "熔炉是做什么的？"}, {"role": "assistant", "content": "熔炉在熔炉间，可以冶炼铁锭，也能熔制玻璃。"}], "q": "它烧什么？", "relevant": ["device:D004#注意"], "items": [], "intents": ["信息"], "type": "多轮指代"}
+{"id": "s105", "history": [{"role": "user", "content": "重水是什么？"}, {"role": "assistant", "content": "重水是氢被氘取代的水，比普通水重约一成。"}], "q": "去哪能弄到？", "relevant": ["item:904#获取"], "items": ["904"], "intents": ["获取"], "type": "多轮指代"}
+{"id": "s106", "history": [{"role": "user", "content": "臭氧怎么来的？"}, {"role": "assistant", "content": "在化工实验室用臭氧发生器对氧气高压放电得到。"}], "q": "那个设备要注意什么？", "relevant": ["device:D007#注意"], "items": [], "intents": ["信息"], "type": "多轮指代"}
+{"id": "s107", "history": [{"role": "user", "content": "硅砂是什么？"}, {"role": "assistant", "content": "硅砂是颗粒细小的二氧化硅，熔点很高。"}], "q": "它能做成什么？", "relevant": ["item:918#用处"], "items": ["918"], "intents": ["关系"], "type": "多轮指代"}
+{"id": "s108", "history": [{"role": "user", "content": "干冰和冰块有什么区别？"}, {"role": "assistant", "content": "干冰是固态二氧化碳，冷却效果远强于冰块，而且不会融化成水。"}], "q": "那前者要怎么保存？", "relevant": ["item:903#存储"], "items": ["903"], "intents": ["信息"], "type": "多轮指代"}
+{"id": "s109", "history": [{"role": "user", "content": "流星碎片怎么来的？"}, {"role": "assistant", "content": "在住处顶楼用牵引装置捕获流星得到。"}], "q": "粉碎以后能得到啥？", "relevant": ["item:914#用处", "item:911#获取", "item:918#获取"], "items": ["914"], "intents": ["关系"], "type": "多轮指代"}

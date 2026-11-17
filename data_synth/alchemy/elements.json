@@ -1,0 +1,10 @@
+{
+  "_说明": "四大元素及覆盖顺序。dominance 越靠前覆盖力越强；color 为占位颜色，美术确定后替换。",
+  "elements": [
+    { "name": "土", "color": "#8B5A2B" },
+    { "name": "气", "color": "#DCE6F0" },
+    { "name": "水", "color": "#3B82F6" },
+    { "name": "火", "color": "#EF4444" }
+  ],
+  "dominance": ["土", "水", "火", "气"]
+}

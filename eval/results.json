@@ -1,0 +1,5970 @@
+{
+ "rewrites": {
+  "llm": [
+   {
+    "question": "纯净水怎么获得？",
+    "standalone": "纯净水怎么获得？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": true,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "哪里能找到水？",
+    "standalone": "哪里能找到纯净水？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "水龙头那里能拿到什么？",
+    "standalone": "水龙头那里能拿到什么物品？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [
+     "home_tap"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "废气排放口能收集到什么东西？",
+    "standalone": "废气排放口能收集到什么东西？",
+    "intents": [
+     "关系"
+    ],
+    "items": [],
+    "locations": [
+     "piston_exhaust"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "纯净水可以用来做什么？",
+    "standalone": "纯净水可以用来做什么？",
+    "intents": [
+     "关系"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "工业上最容易弄到的冷却剂是什么？",
+    "standalone": "工业上最容易弄到的冷却剂是什么？",
+    "intents": [
+     "信息",
+     "获取"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "水在炼金术里有什么地位？",
+    "standalone": "水在炼金术里有什么地位？",
+    "intents": [
+     "设定"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "从化学角度看，水由哪些元素组成？",
+    "standalone": "从化学角度看，水由哪些元素组成？",
+    "intents": [
+     "信息",
+     "设定"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "纯净水条目开头那句引言出自哪里？",
+    "standalone": "纯净水条目开头的引言出自哪里？",
+    "intents": [
+     "设定"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "氢气怎么得到？",
+    "standalone": "氢气怎么得到？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": true,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "电解纯净水会得到什么？",
+    "standalone": "电解纯净水会得到什么？",
+    "intents": [
+     "关系"
+    ],
+    "items": [
+     "001",
+     "002",
+     "004",
+     "006",
+     "008"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "氢气要怎么保存？",
+    "standalone": "氢气要怎么保存？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "在普通加热炉里点燃氢气会发生什么？",
+    "standalone": "在普通加热炉里点燃氢气会发生什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "核聚变反应堆主要烧什么燃料？",
+    "standalone": "核聚变反应堆主要烧什么燃料？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "为什么氢气不由水和气两种元素组成？",
+    "standalone": "为什么氢气不是由水（H₂O）和气体（如氧气或氮气等）这两种物质混合组成的？",
+    "intents": [
+     "信息",
+     "设定"
+    ],
+    "items": [
+     "002",
+     "001",
+     "008"
+    ],
+    "locations": [],
+    "claims": [
+     "氢气是由水和气两种元素组成"
+    ],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "氕、氘、氚是什么？",
+    "standalone": "氕、氘、氚是什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "在顶楼装牵引装置能抓到什么？",
+    "standalone": "在顶楼安装牵引装置能抓到什么物品？",
+    "intents": [
+     "获取"
+    ],
+    "items": [],
+    "locations": [
+     "home_roof"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "捕获流星能得到哪些东西？",
+    "standalone": "捕获流星能得到哪些东西？",
+    "intents": [
+     "获取"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "氢气和氧气反应会生成什么？",
+    "standalone": "氢气和氧气反应会生成什么？",
+    "intents": [
+     "关系"
+    ],
+    "items": [
+     "002",
+     "008"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "光有什么用？",
+    "standalone": "光有什么用",
+    "intents": [
+     "信息",
+     "关系"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "怎样获得光？",
+    "standalone": "怎样获得光？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "太阳能机构的效率受什么影响？",
+    "standalone": "太阳能机构的效率受什么影响？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "光在炼金术里代表什么？",
+    "standalone": "光在炼金术里代表什么",
+    "intents": [
+     "设定"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "光的本质被物理学完全理解了吗？",
+    "standalone": "光的本质被物理学完全理解了吗？",
+    "intents": [
+     "设定"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "“要有光”这句话出自哪里？",
+    "standalone": "“要有光”这句话出自哪里？",
+    "intents": [
+     "设定"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "灯笼果有什么特别的？",
+    "standalone": "灯笼果有什么特别的？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "空间站的设施靠什么供电？",
+    "standalone": "空间站的设施靠什么供电？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "004"
+    ],
+    "locations": [
+     "station"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "收集氢气需要借助什么设备？",
+    "standalone": "收集氢气需要借助什么设备？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": true,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "“诸水之间要有空气”这句话和哪个物品有关？",
+    "standalone": "“诸水之间要有空气”这句话和哪个物品有关？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001",
+     "002",
+     "003",
+     "004",
+     "006",
+     "008"
+    ],
+    "locations": [],
+    "claims": [
+     "诸水之间要有空气"
+    ],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "住处顶楼能获得哪些物品？",
+    "standalone": "在住处顶楼能获得哪些物品？",
+    "intents": [
+     "获取"
+    ],
+    "items": [],
+    "locations": [
+     "home_roof"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "它要怎么存放？",
+    "standalone": "氢气要怎么存放？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "那怎么才能弄到它？",
+    "standalone": "那怎么才能弄到光？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   },
+   {
+    "question": "后面那个地方具体在哪收集？",
+    "standalone": "活塞平台具体在哪里收集冰块？",
+    "intents": [
+     "获取"
+    ],
+    "items": [
+     "006"
+    ],
+    "locations": [
+     "piston"
+    ],
+    "claims": [],
+    "asks_process": true,
+    "asks_alchemy": false,
+    "source": "llm",
+    "error": null
+   }
+  ],
+  "fallback": [
+   {
+    "question": "纯净水怎么获得？",
+    "standalone": "纯净水怎么获得？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "哪里能找到水？",
+    "standalone": "哪里能找到水？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "水龙头那里能拿到什么？",
+    "standalone": "水龙头那里能拿到什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [
+     "home_tap"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "废气排放口能收集到什么东西？",
+    "standalone": "废气排放口能收集到什么东西？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [
+     "piston_exhaust"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "纯净水可以用来做什么？",
+    "standalone": "纯净水可以用来做什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "工业上最容易弄到的冷却剂是什么？",
+    "standalone": "工业上最容易弄到的冷却剂是什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "水在炼金术里有什么地位？",
+    "standalone": "水在炼金术里有什么地位？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "从化学角度看，水由哪些元素组成？",
+    "standalone": "从化学角度看，水由哪些元素组成？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "纯净水条目开头那句引言出自哪里？",
+    "standalone": "纯净水条目开头那句引言出自哪里？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "氢气怎么得到？",
+    "standalone": "氢气怎么得到？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "电解纯净水会得到什么？",
+    "standalone": "电解纯净水会得到什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001",
+     "004"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "氢气要怎么保存？",
+    "standalone": "氢气要怎么保存？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "在普通加热炉里点燃氢气会发生什么？",
+    "standalone": "在普通加热炉里点燃氢气会发生什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "核聚变反应堆主要烧什么燃料？",
+    "standalone": "核聚变反应堆主要烧什么燃料？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "为什么氢气不由水和气两种元素组成？",
+    "standalone": "为什么氢气不由水和气两种元素组成？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002",
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "氕、氘、氚是什么？",
+    "standalone": "氕、氘、氚是什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "在顶楼装牵引装置能抓到什么？",
+    "standalone": "在顶楼装牵引装置能抓到什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [
+     "home_roof"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "捕获流星能得到哪些东西？",
+    "standalone": "捕获流星能得到哪些东西？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "氢气和氧气反应会生成什么？",
+    "standalone": "氢气和氧气反应会生成什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "008",
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "光有什么用？",
+    "standalone": "光有什么用？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "怎样获得光？",
+    "standalone": "怎样获得光？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "太阳能机构的效率受什么影响？",
+    "standalone": "太阳能机构的效率受什么影响？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "光在炼金术里代表什么？",
+    "standalone": "光在炼金术里代表什么？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "光的本质被物理学完全理解了吗？",
+    "standalone": "光的本质被物理学完全理解了吗？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "“要有光”这句话出自哪里？",
+    "standalone": "“要有光”这句话出自哪里？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "003"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "灯笼果有什么特别的？",
+    "standalone": "灯笼果有什么特别的？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "空间站的设施靠什么供电？",
+    "standalone": "空间站的设施靠什么供电？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "004"
+    ],
+    "locations": [
+     "station"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "收集氢气需要借助什么设备？",
+    "standalone": "收集氢气需要借助什么设备？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "002"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "“诸水之间要有空气”这句话和哪个物品有关？",
+    "standalone": "“诸水之间要有空气”这句话和哪个物品有关？",
+    "intents": [
+     "信息"
+    ],
+    "items": [
+     "001"
+    ],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "住处顶楼能获得哪些物品？",
+    "standalone": "住处顶楼能获得哪些物品？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [
+     "home_roof"
+    ],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "它要怎么存放？",
+    "standalone": "它要怎么存放？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "那怎么才能弄到它？",
+    "standalone": "那怎么才能弄到它？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   },
+   {
+    "question": "后面那个地方具体在哪收集？",
+    "standalone": "后面那个地方具体在哪收集？",
+    "intents": [
+     "信息"
+    ],
+    "items": [],
+    "locations": [],
+    "claims": [],
+    "asks_process": false,
+    "asks_alchemy": false,
+    "source": "fallback",
+    "error": null
+   }
+  ]
+ },
+ "runs": [
+  {
+   "setup": "A",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#炼金",
+    "device:D001#用途",
+    "item:001#科学",
+    "item:001#题记",
+    "item:001#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "A",
+   "id": "q02",
+   "query": "哪里能找到水？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:002#用处",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.16666666666666666,
+   "first": 6
+  },
+  {
+   "setup": "A",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么？",
+   "ranked": [
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#炼金",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#题记",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.14285714285714285,
+   "first": 7
+  },
+  {
+   "setup": "A",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#题记",
+    "item:003#科学",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#科学",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "A",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#科学"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "A",
+   "id": "q09",
+   "query": "纯净水条目开头那句引言出自哪里？",
+   "ranked": [
+    "item:001#炼金",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#题记",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.2,
+   "first": 5
+  },
+  {
+   "setup": "A",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "device:D001#用途",
+    "item:002#炼金",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#用处",
+    "item:002#用处",
+    "item:002#存储",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "device:D001#用途",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#题记",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "item:002#炼金",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#用处",
+    "item:002#用处",
+    "item:002#存储",
+    "item:001#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "A",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#炼金",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#用处",
+    "item:002#用处",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q15",
+   "query": "为什么氢气不由水和气两种元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:002#题记",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#用处",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q17",
+   "query": "在顶楼装牵引装置能抓到什么？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:002#获取",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#炼金",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q20",
+   "query": "光有什么用？",
+   "ranked": [],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.0,
+   "first": null
+  },
+  {
+   "setup": "A",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#题记",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:003#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.14285714285714285,
+   "first": 7
+  },
+  {
+   "setup": "A",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q23",
+   "query": "光在炼金术里代表什么？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.0,
+   "first": null
+  },
+  {
+   "setup": "A",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:001#炼金",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#炼金",
+    "item:002#题记",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:002#题记",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q30",
+   "query": "住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#用处",
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "A",
+   "id": "q31",
+   "query": "它要怎么存放？",
+   "ranked": [],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.0,
+   "first": null
+  },
+  {
+   "setup": "A",
+   "id": "q32",
+   "query": "那怎么才能弄到它？",
+   "ranked": [],
+   "hit1": 0.0,
+   "hit5": 0.0,
+   "recall5": 0.0,
+   "mrr": 0.0,
+   "first": null
+  },
+  {
+   "setup": "A",
+   "id": "q33",
+   "query": "后面那个地方具体在哪收集？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "B",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#题记",
+    "device:D001#用途",
+    "item:003#获取",
+    "item:002#题记",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q02",
+   "query": "哪里能找到水？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#题记",
+    "item:002#获取",
+    "item:002#题记",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:001#科学",
+    "item:002#炼金",
+    "item:003#获取",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "item:003#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#题记",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#获取",
+    "item:001#获取",
+    "item:002#存储",
+    "item:002#用处",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:002#科学",
+    "item:003#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "B",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#炼金",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:002#科学",
+    "item:001#炼金",
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#科学",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#炼金",
+    "item:001#科学",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#用处",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:001#科学",
+    "item:002#炼金",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#科学",
+    "item:001#题记",
+    "item:002#题记",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q09",
+   "query": "纯净水条目开头那句引言出自哪里？",
+   "ranked": [
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#题记",
+    "item:001#获取",
+    "item:001#科学",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:002#获取",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#炼金",
+    "item:001#获取",
+    "item:002#题记",
+    "item:002#存储",
+    "item:001#用处",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#科学",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#题记",
+    "device:D001#注意",
+    "item:003#获取",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:002#用处",
+    "item:002#获取",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#科学",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#用处",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#炼金",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#题记",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q15",
+   "query": "为什么氢气不由水和气两种元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#科学",
+    "item:001#科学",
+    "item:002#用处",
+    "item:002#题记",
+    "item:002#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:001#炼金",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#科学",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:001#题记",
+    "item:002#用处",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q17",
+   "query": "在顶楼装牵引装置能抓到什么？",
+   "ranked": [
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#获取",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:002#题记",
+    "item:002#用处",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:003#科学",
+    "item:002#科学",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#题记",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#获取",
+    "device:D001#用途",
+    "item:001#科学",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q20",
+   "query": "光有什么用？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:003#获取",
+    "item:001#题记",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#科学",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:003#题记",
+    "item:001#获取",
+    "item:001#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "B",
+   "id": "q23",
+   "query": "光在炼金术里代表什么？",
+   "ranked": [
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#科学",
+    "item:002#炼金",
+    "item:003#获取",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#获取",
+    "item:002#科学",
+    "item:001#题记",
+    "item:001#科学",
+    "item:002#炼金",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:003#炼金",
+    "item:002#题记",
+    "item:003#用处",
+    "item:001#题记",
+    "item:003#科学",
+    "item:003#获取",
+    "item:001#炼金",
+    "item:001#获取",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#炼金",
+    "item:003#获取",
+    "item:003#科学",
+    "item:003#题记",
+    "item:002#科学",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#用处",
+    "item:002#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "B",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#科学",
+    "item:003#炼金",
+    "device:D001#用途",
+    "item:003#科学",
+    "item:001#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "B",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#存储",
+    "item:002#科学",
+    "item:002#用处",
+    "item:001#获取",
+    "item:002#炼金",
+    "item:003#获取",
+    "device:D001#用途",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:002#题记",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:001#用处",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:003#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q30",
+   "query": "住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#炼金",
+    "item:002#题记",
+    "item:001#炼金",
+    "item:003#用处",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q31",
+   "query": "它要怎么存放？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#题记",
+    "item:001#科学",
+    "item:002#用处",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q32",
+   "query": "那怎么才能弄到它？",
+   "ranked": [
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#用处",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "B",
+   "id": "q33",
+   "query": "后面那个地方具体在哪收集？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#存储",
+    "item:002#题记",
+    "item:003#用处",
+    "item:001#用处",
+    "item:002#科学",
+    "item:001#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.25,
+   "first": 4
+  },
+  {
+   "setup": "C",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:001#题记",
+    "item:003#获取",
+    "item:002#题记",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q02",
+   "query": "哪里能找到水？",
+   "ranked": [
+    "item:001#题记",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#用处",
+    "item:002#用处",
+    "item:002#获取",
+    "item:002#题记",
+    "item:003#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "item:003#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#题记",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#存储",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:002#科学",
+    "item:003#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#炼金",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#科学",
+    "item:001#题记",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#炼金",
+    "item:003#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#用处",
+    "item:001#题记",
+    "item:003#科学",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#炼金",
+    "item:003#炼金",
+    "item:001#科学",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#用处",
+    "item:001#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:001#用处",
+    "item:001#题记",
+    "item:002#题记",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:002#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q09",
+   "query": "纯净水条目开头那句引言出自哪里？",
+   "ranked": [
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#用处",
+    "item:001#科学",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#用途",
+    "item:002#题记",
+    "item:003#题记",
+    "item:003#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#存储"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "C",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "device:D001#用途",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#获取",
+    "item:001#题记",
+    "device:D001#注意",
+    "item:003#获取",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记",
+    "item:002#获取",
+    "item:002#存储",
+    "item:002#用处",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#用处",
+    "item:002#获取",
+    "item:002#科学",
+    "item:002#题记",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q15",
+   "query": "为什么氢气不由水和气两种元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#题记",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#获取",
+    "item:001#用处",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#科学",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:001#题记",
+    "item:002#用处",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q17",
+   "query": "在顶楼装牵引装置能抓到什么？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#获取",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:002#题记",
+    "item:002#用处",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "device:D001#用途",
+    "item:003#获取",
+    "item:003#炼金",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:003#科学",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#炼金",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#题记",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q20",
+   "query": "光有什么用？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:003#获取",
+    "item:001#题记",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:003#题记",
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:002#科学"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "C",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:003#题记",
+    "item:001#获取",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q23",
+   "query": "光在炼金术里代表什么？",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#科学",
+    "item:003#获取",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "C",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:001#题记",
+    "item:001#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:003#炼金",
+    "item:002#题记",
+    "item:003#用处",
+    "item:001#题记",
+    "item:003#科学",
+    "item:003#获取",
+    "item:001#炼金",
+    "item:001#获取",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:002#科学",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#用处",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#科学",
+    "item:003#炼金",
+    "device:D001#用途",
+    "item:003#科学",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#用处",
+    "item:002#题记",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:003#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q30",
+   "query": "住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#炼金",
+    "item:002#题记",
+    "item:001#炼金",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q31",
+   "query": "它要怎么存放？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#题记",
+    "item:001#科学",
+    "item:002#用处",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q32",
+   "query": "那怎么才能弄到它？",
+   "ranked": [
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#用处",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "C",
+   "id": "q33",
+   "query": "后面那个地方具体在哪收集？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#题记",
+    "item:003#用处",
+    "item:001#用处",
+    "item:002#科学",
+    "item:001#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "D",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#题记",
+    "item:003#获取",
+    "device:D001#注意",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q02",
+   "query": "哪里能找到纯净水？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "item:003#获取",
+    "device:D001#注意",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#获取",
+    "item:003#获取",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#存储",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#题记",
+    "item:002#用处",
+    "item:003#用处",
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#用处",
+    "item:003#科学",
+    "item:003#用处",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#炼金",
+    "item:003#炼金",
+    "item:001#科学",
+    "item:002#题记",
+    "item:001#题记",
+    "item:002#科学",
+    "item:003#科学",
+    "item:003#题记",
+    "item:001#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:001#用处",
+    "item:001#题记",
+    "item:002#题记",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:002#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q09",
+   "query": "纯净水条目开头的引言出自哪里？",
+   "ranked": [
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:002#题记",
+    "item:003#炼金",
+    "item:003#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#存储",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#题记",
+    "item:003#获取",
+    "item:002#用处",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#获取",
+    "item:002#存储",
+    "item:002#用处",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#用处",
+    "item:002#获取",
+    "item:002#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q15",
+   "query": "为什么氢气不是由水（H₂O）和气体（如氧气或氮气等）这两种物质混合组成的？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#用处",
+    "item:002#存储",
+    "item:001#用处",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#题记",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#科学",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:002#用处",
+    "item:003#用处",
+    "item:003#科学",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q17",
+   "query": "在顶楼安装牵引装置能抓到什么物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:002#用处",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "device:D001#用途",
+    "item:003#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储",
+    "item:002#用处",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#用处",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q20",
+   "query": "光有什么用",
+   "ranked": [
+    "item:003#用处",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#获取",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#用处",
+    "device:D001#注意",
+    "device:D001#用途"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q23",
+   "query": "光在炼金术里代表什么",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#科学",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#题记",
+    "item:001#科学",
+    "item:003#用处"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.3333333333333333,
+   "first": 3
+  },
+  {
+   "setup": "D",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:001#炼金",
+    "item:003#用处",
+    "item:003#获取",
+    "item:002#科学",
+    "item:001#题记",
+    "item:001#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:003#炼金",
+    "item:002#题记",
+    "item:001#题记",
+    "item:003#科学",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:002#科学",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:002#存储",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#科学",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:002#用处",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:001#用处",
+    "item:002#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:002#获取",
+    "device:D001#注意"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "D",
+   "id": "q30",
+   "query": "在住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#用处",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q31",
+   "query": "氢气要怎么存放？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#获取",
+    "item:002#存储",
+    "item:002#用处",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q32",
+   "query": "那怎么才能弄到光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "D",
+   "id": "q33",
+   "query": "活塞平台具体在哪里收集冰块？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:003#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#获取",
+    "device:D001#用途",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q02",
+   "query": "哪里能找到纯净水？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#获取",
+    "device:D001#注意",
+    "device:D001#用途",
+    "item:002#用处",
+    "item:002#存储",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#题记",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "item:002#用处",
+    "item:002#题记",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#用处",
+    "item:003#科学",
+    "item:003#用处",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:001#用处",
+    "item:001#题记",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q09",
+   "query": "纯净水条目开头的引言出自哪里？",
+   "ranked": [
+    "item:001#炼金",
+    "item:001#题记",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:002#题记",
+    "item:002#炼金",
+    "item:002#科学"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "E",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "item:002#获取",
+    "item:002#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#题记",
+    "item:002#用处",
+    "item:003#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#用处",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#存储",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "item:001#科学"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 0.25,
+   "first": 4
+  },
+  {
+   "setup": "E",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:002#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q15",
+   "query": "为什么氢气不是由水（H₂O）和气体（如氧气或氮气等）这两种物质混合组成的？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#用处",
+    "item:002#科学",
+    "item:002#存储",
+    "item:001#科学",
+    "item:002#题记",
+    "item:001#用处",
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#科学",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:002#用处",
+    "item:003#用处",
+    "item:003#科学",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q17",
+   "query": "在顶楼安装牵引装置能抓到什么物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#用处",
+    "item:003#获取",
+    "item:002#存储",
+    "item:003#用处",
+    "item:002#用处",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "device:D001#用途",
+    "item:003#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储",
+    "item:002#用处",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "item:001#用处",
+    "item:002#获取",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:002#炼金",
+    "item:002#题记",
+    "item:002#科学",
+    "device:D001#注意",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q20",
+   "query": "光有什么用",
+   "ranked": [
+    "item:003#炼金",
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#获取",
+    "item:003#题记",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#获取",
+    "item:002#获取"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.5,
+   "first": 2
+  },
+  {
+   "setup": "E",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#题记",
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#用处",
+    "device:D001#注意",
+    "device:D001#用途"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:002#科学",
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:002#用处",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q23",
+   "query": "光在炼金术里代表什么",
+   "ranked": [
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:001#题记",
+    "item:001#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#用处",
+    "item:003#获取",
+    "item:002#题记",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:002#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:002#科学",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:002#存储",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#科学",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#用处",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:003#获取",
+    "item:002#科学",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#题记",
+    "item:001#获取",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#炼金"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 0.25,
+   "first": 4
+  },
+  {
+   "setup": "E",
+   "id": "q30",
+   "query": "在住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "item:003#获取",
+    "item:002#存储",
+    "item:002#用处",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q31",
+   "query": "氢气要怎么存放？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#用处",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#存储",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "item:001#科学"
+   ],
+   "hit1": 0.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 0.25,
+   "first": 4
+  },
+  {
+   "setup": "E",
+   "id": "q32",
+   "query": "那怎么才能弄到光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "E",
+   "id": "q33",
+   "query": "活塞平台具体在哪里收集冰块？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:002#获取",
+    "item:003#获取",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#炼金",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q02",
+   "query": "哪里能找到纯净水？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#题记",
+    "device:D001#用途",
+    "item:002#题记",
+    "item:002#炼金",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:002#存储",
+    "device:D001#用途",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#题记",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#存储",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:001#炼金",
+    "item:003#获取",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#获取",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#题记",
+    "item:002#用处",
+    "item:002#题记",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:001#炼金",
+    "device:D001#用途",
+    "device:D001#注意",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:002#题记",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#获取",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q09",
+   "query": "纯净水条目开头的引言出自哪里？",
+   "ranked": [
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#题记",
+    "item:002#获取",
+    "device:D001#用途",
+    "item:002#炼金",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#科学",
+    "item:002#炼金",
+    "device:D001#用途",
+    "item:002#存储",
+    "item:002#用处",
+    "item:001#用处",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#用处",
+    "item:003#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#获取",
+    "item:002#用处",
+    "item:002#炼金",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#用处",
+    "item:002#题记",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:001#用处",
+    "item:002#科学",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:001#科学",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q15",
+   "query": "为什么氢气不是由水（H₂O）和气体（如氧气或氮气等）这两种物质混合组成的？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#科学",
+    "item:001#获取",
+    "item:002#科学",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#炼金",
+    "item:003#炼金",
+    "item:001#科学",
+    "item:002#炼金",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q17",
+   "query": "在顶楼安装牵引装置能抓到什么物品？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#获取",
+    "item:001#题记",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:002#存储",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:003#科学",
+    "device:D001#用途",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#题记",
+    "item:002#科学",
+    "item:002#题记",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q20",
+   "query": "光有什么用",
+   "ranked": [
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#获取",
+    "item:003#题记",
+    "item:001#用处",
+    "item:002#用处",
+    "item:001#炼金",
+    "item:001#获取",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#题记",
+    "item:003#用处",
+    "item:002#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "device:D001#注意",
+    "device:D001#用途",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "item:003#炼金",
+    "item:002#科学",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q23",
+   "query": "光在炼金术里代表什么",
+   "ranked": [
+    "item:003#炼金",
+    "item:003#题记",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#题记",
+    "item:002#炼金",
+    "item:002#题记",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:002#科学",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#题记",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:001#题记",
+    "item:002#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:003#炼金",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#题记",
+    "item:001#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#题记",
+    "item:003#获取",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:002#题记",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:003#炼金",
+    "item:001#获取",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#获取",
+    "item:003#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q30",
+   "query": "在住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:001#题记",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:002#题记",
+    "item:001#用处",
+    "item:001#科学",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q31",
+   "query": "氢气要怎么存放？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:002#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q32",
+   "query": "那怎么才能弄到光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:003#用处",
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:001#用处",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "F",
+   "id": "q33",
+   "query": "活塞平台具体在哪里收集冰块？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#题记",
+    "item:002#获取",
+    "item:003#获取",
+    "device:D001#用途",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q01",
+   "query": "纯净水怎么获得？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:001#题记",
+    "item:002#炼金",
+    "device:D001#注意",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q02",
+   "query": "哪里能找到水？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#炼金",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q03",
+   "query": "水龙头那里能拿到什么？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:003#获取",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#存储",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q04",
+   "query": "废气排放口能收集到什么东西？",
+   "ranked": [
+    "item:001#获取",
+    "item:001#题记",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#存储",
+    "item:001#用处",
+    "item:001#炼金",
+    "item:003#获取",
+    "item:002#用处",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q05",
+   "query": "纯净水可以用来做什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#炼金",
+    "item:001#获取",
+    "item:001#科学",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:001#题记",
+    "item:002#用处",
+    "item:002#炼金",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q06",
+   "query": "工业上最容易弄到的冷却剂是什么？",
+   "ranked": [
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:001#炼金",
+    "device:D001#用途",
+    "device:D001#注意",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q07",
+   "query": "水在炼金术里有什么地位？",
+   "ranked": [
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:001#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#题记",
+    "item:002#题记",
+    "item:002#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q08",
+   "query": "从化学角度看，水由哪些元素组成？",
+   "ranked": [
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#获取",
+    "item:001#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q09",
+   "query": "纯净水条目开头那句引言出自哪里？",
+   "ranked": [
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#科学",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#用处",
+    "device:D001#用途",
+    "item:002#炼金",
+    "item:002#用处",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q10",
+   "query": "氢气怎么得到？",
+   "ranked": [
+    "item:002#获取",
+    "device:D001#注意",
+    "item:001#获取",
+    "item:002#科学",
+    "item:002#炼金",
+    "device:D001#用途",
+    "item:002#存储",
+    "item:002#用处",
+    "item:001#用处",
+    "item:002#题记"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 0.5,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q11",
+   "query": "电解纯净水会得到什么？",
+   "ranked": [
+    "device:D001#用途",
+    "item:001#用处",
+    "item:002#获取",
+    "item:001#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#题记",
+    "device:D001#注意",
+    "item:002#用处",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q12",
+   "query": "氢气要怎么保存？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:002#题记",
+    "item:002#科学",
+    "item:002#获取",
+    "item:002#用处",
+    "item:002#炼金",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q13",
+   "query": "在普通加热炉里点燃氢气会发生什么？",
+   "ranked": [
+    "item:002#存储",
+    "item:002#用处",
+    "item:002#题记",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#炼金",
+    "item:002#科学",
+    "device:D001#用途",
+    "item:001#获取",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q14",
+   "query": "核聚变反应堆主要烧什么燃料？",
+   "ranked": [
+    "item:002#用处",
+    "item:001#用处",
+    "item:002#科学",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:001#获取",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:001#科学",
+    "item:003#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q15",
+   "query": "为什么氢气不由水和气两种元素组成？",
+   "ranked": [
+    "item:002#炼金",
+    "item:002#科学",
+    "item:002#题记",
+    "item:001#科学",
+    "item:001#用处",
+    "item:002#用处",
+    "device:D001#用途",
+    "item:002#获取",
+    "item:002#存储",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q16",
+   "query": "氕、氘、氚是什么？",
+   "ranked": [
+    "item:002#科学",
+    "item:001#炼金",
+    "item:003#炼金",
+    "item:001#科学",
+    "item:002#炼金",
+    "item:001#用处",
+    "device:D001#注意",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q17",
+   "query": "在顶楼装牵引装置能抓到什么？",
+   "ranked": [
+    "item:002#获取",
+    "item:001#获取",
+    "item:003#获取",
+    "item:003#用处",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:002#存储",
+    "item:001#科学",
+    "item:001#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q18",
+   "query": "捕获流星能得到哪些东西？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:003#炼金",
+    "item:003#用处",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:003#科学",
+    "device:D001#用途",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q19",
+   "query": "氢气和氧气反应会生成什么？",
+   "ranked": [
+    "item:002#用处",
+    "item:001#用处",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#题记",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q20",
+   "query": "光有什么用？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#获取",
+    "item:003#题记",
+    "item:001#用处",
+    "item:002#用处",
+    "item:001#获取",
+    "item:002#获取",
+    "item:001#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q21",
+   "query": "怎样获得光？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#题记",
+    "item:003#用处",
+    "item:002#获取",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "item:001#炼金",
+    "device:D001#注意",
+    "item:001#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q22",
+   "query": "太阳能机构的效率受什么影响？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#用处",
+    "item:001#获取",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:001#用处",
+    "item:002#存储",
+    "item:003#炼金",
+    "item:002#科学",
+    "item:002#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q23",
+   "query": "光在炼金术里代表什么？",
+   "ranked": [
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:002#炼金",
+    "item:002#获取",
+    "item:002#科学",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q24",
+   "query": "光的本质被物理学完全理解了吗？",
+   "ranked": [
+    "item:003#科学",
+    "item:003#炼金",
+    "item:003#题记",
+    "item:003#用处",
+    "item:003#获取",
+    "item:002#科学",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:001#获取"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q25",
+   "query": "“要有光”这句话出自哪里？",
+   "ranked": [
+    "item:003#题记",
+    "item:003#炼金",
+    "item:003#科学",
+    "item:001#炼金",
+    "item:002#炼金",
+    "item:003#获取",
+    "item:001#获取",
+    "item:003#用处",
+    "item:001#用处",
+    "item:001#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q26",
+   "query": "灯笼果有什么特别的？",
+   "ranked": [
+    "item:003#获取",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:001#获取",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q27",
+   "query": "空间站的设施靠什么供电？",
+   "ranked": [
+    "item:003#用处",
+    "item:003#获取",
+    "item:001#获取",
+    "device:D001#注意",
+    "item:003#炼金",
+    "item:002#获取",
+    "item:002#用处",
+    "item:003#题记",
+    "item:001#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q28",
+   "query": "收集氢气需要借助什么设备？",
+   "ranked": [
+    "device:D001#注意",
+    "item:002#存储",
+    "item:002#获取",
+    "item:001#获取",
+    "device:D001#用途",
+    "item:002#科学",
+    "item:002#用处",
+    "item:002#题记",
+    "item:003#获取",
+    "item:002#炼金"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q29",
+   "query": "“诸水之间要有空气”这句话和哪个物品有关？",
+   "ranked": [
+    "item:002#题记",
+    "item:001#题记",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#炼金",
+    "item:001#获取",
+    "item:001#科学",
+    "item:002#科学",
+    "item:002#获取",
+    "device:D001#注意"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q30",
+   "query": "住处顶楼能获得哪些物品？",
+   "ranked": [
+    "item:001#获取",
+    "item:002#获取",
+    "item:003#获取",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:003#用处",
+    "item:002#炼金",
+    "item:001#科学",
+    "item:002#存储"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q31",
+   "query": "它要怎么存放？",
+   "ranked": [
+    "item:002#存储",
+    "device:D001#注意",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:003#炼金",
+    "item:002#科学",
+    "item:001#获取",
+    "item:003#获取",
+    "item:002#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q32",
+   "query": "那怎么才能弄到它？",
+   "ranked": [
+    "item:003#获取",
+    "item:001#获取",
+    "item:002#获取",
+    "device:D001#注意",
+    "item:002#存储",
+    "item:003#炼金",
+    "item:001#炼金",
+    "item:003#科学",
+    "item:001#用处",
+    "item:003#用处"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  },
+  {
+   "setup": "G",
+   "id": "q33",
+   "query": "后面那个地方具体在哪收集？",
+   "ranked": [
+    "item:001#获取",
+    "device:D001#注意",
+    "item:003#炼金",
+    "item:002#获取",
+    "item:002#存储",
+    "item:003#获取",
+    "item:001#科学",
+    "item:001#炼金",
+    "item:001#用处",
+    "item:002#科学"
+   ],
+   "hit1": 1.0,
+   "hit5": 1.0,
+   "recall5": 1.0,
+   "mrr": 1.0,
+   "first": 1
+  }
+ ]
+}

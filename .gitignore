@@ -1,0 +1,17 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Python backend
+__pycache__/
+backend/.venv/
+backend/models/
+backend/cache/
+backend/*.log
+backend/*.err
+
+# 本地 rollback / 旧数据镜像 / 缓存产物（不入库）
+backups/
+/data/
+.fennara/
+*.npy

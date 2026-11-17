@@ -1,0 +1,26 @@
+{
+  "_说明": [
+    "合成实验数据：在正式临时地图上扩充了合成物品文档里出现的地点。不要拷回 data/。",
+    "地图是一棵树：每个节点写 parent（根节点为 null）。kind：area 区域 / point 可交互点。",
+    "aliases 是回答和问题里可能出现的别称；pos 是地图界面上的坐标，可不填，不填时由界面自动布局。"
+  ],
+  "nodes": [
+    { "id": "station",         "name": "空间站",     "parent": null,          "kind": "area" },
+    { "id": "home",            "name": "住处",       "parent": "station",     "kind": "area" },
+    { "id": "home_roof",       "name": "住处顶楼",   "parent": "home",        "kind": "area",  "aliases": ["顶楼"] },
+    { "id": "home_garden",     "name": "住处种植区", "parent": "home",        "kind": "area",  "aliases": ["种植区"] },
+    { "id": "home_tap",        "name": "水龙头",     "parent": "home_garden", "kind": "point" },
+    { "id": "home_kitchen",    "name": "住处厨房",   "parent": "home",        "kind": "point", "aliases": ["厨房"] },
+    { "id": "piston",          "name": "活塞平台",   "parent": "station",     "kind": "area" },
+    { "id": "piston_exhaust",  "name": "废气排放口", "parent": "piston",      "kind": "point" },
+    { "id": "piston_reactor",  "name": "反应堆舱",   "parent": "piston",      "kind": "point", "aliases": ["聚变反应堆舱"] },
+    { "id": "factory",         "name": "工业区",     "parent": "station",     "kind": "area" },
+    { "id": "factory_furnace", "name": "熔炉间",     "parent": "factory",     "kind": "point" },
+    { "id": "factory_lab",     "name": "化工实验室", "parent": "factory",     "kind": "point", "aliases": ["实验室"] },
+    { "id": "market",          "name": "集市",       "parent": "station",     "kind": "area" },
+    { "id": "market_shop",     "name": "杂货铺",     "parent": "market",      "kind": "point" },
+    { "id": "market_bar",      "name": "酒馆",       "parent": "market",      "kind": "point" },
+    { "id": "dock",            "name": "停泊港",     "parent": "station",     "kind": "area",  "aliases": ["港口"] },
+    { "id": "dock_scrap",      "name": "废料场",     "parent": "dock",        "kind": "point" }
+  ]
+}

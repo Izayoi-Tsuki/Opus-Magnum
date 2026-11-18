@@ -237,7 +237,10 @@ class Assistant:
             "answer": answer,
             "refs": self.markers.refs(answer),
             "alchemy": [a for a in ctx["alchemy"].values() if a and a["recipes"]] if rw.asks_alchemy else [],
-            "flows": [{"item": iid, "flows": f} for iid, f in ctx["flows"].items() if f] if rw.asks_process else [],
+            # flows 与 gather 的 wants_flow 同条件发出（不再单独卡 asks_process），
+            # 否则模型漏标时流程只进文字资料、前端拿不到图。是否自动切页由 asks_process 决定。
+            "flows": [{"item": iid, "flows": f} for iid, f in ctx["flows"].items() if f],
+            "asks_process": rw.asks_process,
             "map": ctx["route"],
             "timing": {"rewrite": round((t1 - t0) * 1000), "retrieval": round((t2 - t1) * 1000),
                        "generate": round((t3 - t2) * 1000)},

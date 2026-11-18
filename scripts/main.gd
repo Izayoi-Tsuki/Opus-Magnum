@@ -306,6 +306,8 @@ func _on_done(ev: Dictionary) -> void:
 	var fl: Array = ev.get("flows", [])
 	if not fl.is_empty():
 		flows.show_groups(fl)
-		target = Page.FLOWS
+		# 只有显式问工业流程才自动切页；其余情况预装载，切到 02 页即见图
+		if bool(ev.get("asks_process", false)):
+			target = Page.FLOWS
 	if target >= 0:
 		tabs.current_tab = target

@@ -21,6 +21,9 @@ INTENT_HELP = {
 }
 HISTORY_TURNS = 6
 MAX_ITEMS = 6      # 模型偶尔会把整个物品枚举都选上，超过这个数就不采用，只靠名称匹配
+# 确定性兜底：模型漏标 asks_process/asks_alchemy 时，靠关键词保证工业流程/炼金屏能画出来。
+PROCESS_WORDS = ("工业", "流程", "制造", "制成", "生产", "工艺", "管线", "量产")
+ALCHEMY_WORDS = ("炼金", "配方", "合成", "叠放")
 
 
 @dataclass
@@ -145,5 +148,10 @@ class Rewriter:
         if not res.intents:
             res.intents = ["信息"]
         if "合成" in res.intents:
+            res.asks_alchemy = True
+        text = res.standalone + "\n" + question
+        if not res.asks_process and any(w in text for w in PROCESS_WORDS):
+            res.asks_process = True
+        if not res.asks_alchemy and any(w in text for w in ALCHEMY_WORDS):
             res.asks_alchemy = True
         return res

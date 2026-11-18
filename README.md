@@ -3,6 +3,8 @@
 Godot 4 前端（EXAPUNKS 风格站内终端）+ FastAPI 后端（KG-RAG 问答 / 图鉴 / 地图 / 知识图谱 / 炼金引擎）。
 仓库包含**全部代码与数据**，**不包含任何模型权重**（LLM、向量、重排模型均按需自备），克隆后在有 Godot 的机器上即可运行。
 
+演示视频：[`media/Local LLM+Rag.mp4`](media/Local%20LLM+Rag.mp4)（本地 LLM + RAG 问答与五页联动实录）。
+
 ## 目录
 
 ```
